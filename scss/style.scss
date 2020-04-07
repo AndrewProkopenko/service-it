@@ -1,0 +1,33 @@
+@import "../fonts/Circe/stylesheet.css";
+@import "../fonts/Montserrat/Montserrat/stylesheet.css";
+
+html, body { 
+    font-size: 16px;
+    background: #fff;
+    color: #000;
+}
+$primary: #611afd;
+$warning: #ffaf05; 
+
+$font-family-sans-serif:  'Circe';
+
+
+@import "_header";
+@import "_main-banner";
+@import "_about";
+
+@import "_media";
+
+@import "../node_modules/mobius1-selectr/dist/selectr.min.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.section { 
+    h3 { 
+        font-weight: 800;
+        font-size: 50px;
+        span { 
+            color: $warning;
+        }
+    }
+}

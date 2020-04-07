@@ -1,0 +1,178 @@
+@media screen and (max-width: 350px) { }
+@media screen and (max-width: 400px) {
+    .service-about { 
+        &_items {    
+            font-size: 10px; 
+        }
+    }
+ }
+@media screen and (max-width: 500px) { 
+    .service-header { 
+        
+        &_collapse {     
+            &__tools { 
+                &-phone { 
+                    flex-direction: column;
+                    width: 100%;
+                    .number { 
+                        justify-content: center;
+                    }
+                    .btn-custom { 
+                        width: 100%;
+                        margin-top: 15px;
+                        a { 
+                            width: 100%;
+                            text-align: center;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .service-banner { 
+        &_content { 
+            
+            h2 { 
+                font-size: 35px !important; 
+                line-height: 40px; 
+            }
+            &-price { 
+                width: 100%;
+                padding: 25px;
+                margin-bottom: 45px;
+    
+                font-size: 20px; 
+                
+                
+            }
+           
+        }
+    
+        &_trigger {  
+            h3 { 
+                font-size: 35px !important;
+            }
+            &-item { 
+                 
+                .text { 
+                    width: 80%;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 12px; 
+                   
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 770px) {
+    .service-header { 
+        
+        &_collapse { 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+    
+            &__tools { 
+                flex-direction: column;
+                justify-content: flex-start; 
+                align-items: center;
+                &-select { 
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+    .service-banner { 
+        &_content { 
+            &-button { 
+                // p { 
+                //     font-size: 18px;
+                //     font-weight: 800;
+                //     margin-bottom: 15px;
+                // }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    input { 
+                        margin-bottom: 20px;
+                    }
+                    button  {
+                        justify-content: center;
+                    }
+                 }
+                span {
+                    font-size: 12px;
+                    line-height: 10px;
+                    font-weight: 300;
+                 }
+            }
+        }
+    }
+    .service-about { 
+        &_items {   
+            padding: 10px 5px;
+    
+            font-size: 12px;
+            line-height: 10px; 
+            svg { 
+                width: 15px;
+                height: 15px; 
+            }
+        }
+        &_trigger { 
+            height: auto;
+        }
+    }
+ }
+@media screen and (max-width: 995px) { 
+    .service-header { 
+        margin-bottom: 0;
+        &_collapse { 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+    
+            &__tools { 
+                order: 2;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding-left: 0;
+            }
+        }
+    
+        &_menu  { 
+            position: static; 
+            
+            
+            width: 100%; 
+            height: auto;
+            background: none;
+            
+            .mobile-menu { 
+                display: flex;
+                flex-direction: column;
+                
+                padding-bottom: 20px;
+            }
+            a { 
+                color: #000;
+            }
+        }
+    }
+    .service-banner {     
+        &_trigger { 
+            
+            &-item { 
+                margin-bottom: 15px;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 1200px) { } 

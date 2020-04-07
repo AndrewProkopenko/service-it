@@ -1,0 +1,175 @@
+.service-header { 
+    margin-bottom: 45px; 
+    .navbar { 
+        position: static;
+        padding: 1rem 0;
+    }
+    &_logo { 
+        &:hover { 
+            text-decoration: none;
+        }
+        display: flex;
+        align-items: center;
+        &__image {
+            width: 80px;
+            height: 80px;
+
+            background-image: url(../images/logo.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+        &__text {
+            padding-left: 12px;
+
+            text-transform: uppercase;
+            color: #000;
+            font-size: 10px;
+            line-height: 10px;
+            font-weight: 800;
+            span { 
+                color: $warning;
+            }
+            div {  
+                &:last-child { 
+                    line-height: 8px;
+                    font-size: 8px;
+                    font-weight: 600;
+                }
+            }
+         }
+    }
+    &_collapse { 
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        &__tools { 
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            padding-left: 50px;
+            &-phone { 
+                display: flex;
+                svg { 
+                    margin-right: 2px;
+                    height: 18px;
+                    width: 18px; 
+                    fill: $warning;  
+                } 
+                .number { 
+                    display: flex;
+                    align-items: center;
+
+                    font-size: 18px;
+                    font-weight: 800;
+                }
+                .btn-custom { 
+                    a { 
+                        display: inline-block;
+                        padding: 14px 30px;
+                        margin-left: 16px;
+
+                        font-size: 12px;
+                        line-height: 10px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        background-image: -moz-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
+                        background-image: -webkit-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
+                        background-image: -ms-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
+                        box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.3);
+                        border-radius: 25px;
+                        color: #ffffff;
+
+                        transition: 300ms ease;
+
+                        &:hover { 
+                            box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.64);
+                            text-decoration: none; 
+                        }
+                    }
+                     
+                      
+                }
+            }
+            &-select { 
+                display: flex;
+                align-items: center;
+
+                font-size: 14px;
+                color: #25313f;
+                label { 
+                    white-space: nowrap;
+                    margin: 0;
+                    padding-right: 10px;
+                }
+                .selectr-selected { 
+                    width: 150px;
+                    padding: 5px 20px ;
+
+                    background: #e9eff3;
+                    border-radius: 20px;
+                    border: none;
+
+                    &::before { 
+                        display: none;
+                    }
+                    &::after { 
+                        content: ' ';
+                        position: absolute;
+                        top: calc(50% - 1px );
+                        right: 15px;
+
+                        width: 10px;
+                        height: 6px;
+                        background-image: url(../icons/down-arrow.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                  
+                }
+                .selectr-options-container { 
+                    border-color: #e9eff3;
+                }
+                .selectr-options { 
+                    max-height: auto;
+                    overflow: visible; 
+                    .selectr-option.active { 
+                        background-color: $primary;
+                    }
+                    .selectr-option.selected { 
+                        background-color: #e9eff3;
+                        color: #25313f;
+                    }
+                }
+            }
+        }
+    }
+
+    &_menu  { 
+        position: absolute;
+        bottom: -45px;
+        left: 0; 
+
+        width: 100%; 
+        height: 45px;
+        background: $primary;
+
+        a { 
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            transition: 300ms ease;
+
+            &:hover { 
+                color: #fbe947;
+                text-decoration: none;
+            }
+        }
+        a.active { 
+            color: #fbe947;
+        }
+    }
+}

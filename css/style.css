@@ -72,26 +72,6 @@ html, body {
   font-size: 18px;
   font-weight: 800;
 }
-.service-header_collapse__tools-phone .btn-custom a {
-  display: inline-block;
-  padding: 14px 30px;
-  margin-left: 16px;
-  font-size: 12px;
-  line-height: 10px;
-  font-weight: 800;
-  text-transform: uppercase;
-  background-image: -moz-linear-gradient(-41deg, #7737fb 0%, #631cfd 40%, #4e00ff 100%);
-  background-image: -webkit-linear-gradient(-41deg, #7737fb 0%, #631cfd 40%, #4e00ff 100%);
-  background-image: -ms-linear-gradient(-41deg, #7737fb 0%, #631cfd 40%, #4e00ff 100%);
-  box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.3);
-  border-radius: 25px;
-  color: #ffffff;
-  transition: 300ms ease;
-}
-.service-header_collapse__tools-phone .btn-custom a:hover {
-  box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.64);
-  text-decoration: none;
-}
 .service-header_collapse__tools-select {
   display: flex;
   align-items: center;
@@ -159,6 +139,28 @@ html, body {
 }
 .service-header_menu a.active {
   color: #fbe947;
+}
+
+.btn-custom a {
+  display: inline-block;
+  padding: 14px 30px;
+  margin-left: 16px;
+  font-size: 12px;
+  line-height: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-image: -moz-linear-gradient(-41deg, #7737fb 0%, #631cfd 40%, #4e00ff 100%);
+  background-image: -webkit-linear-gradient(-41deg, #7737fb 0%, #631cfd 40%, #4e00ff 100%);
+  background-image: -ms-linear-gradient(-41deg, #7737fb 0%, #631cfd 40%, #4e00ff 100%);
+  box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.3);
+  border-radius: 25px;
+  color: #ffffff;
+  transition: 300ms ease;
+}
+.btn-custom a:hover {
+  box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.64);
+  text-decoration: none;
+  color: #fff;
 }
 
 .service-banner {
@@ -255,12 +257,20 @@ html, body {
   border: none;
   outline: none;
   border-radius: 30px;
+  transition: 300ms ease;
 }
 .service-banner_content-button form button svg {
   height: 1.2em;
   width: 1em;
   fill: #000;
   margin-left: 15px;
+  transition: 300ms ease;
+}
+.service-banner_content-button form button:hover {
+  color: #353535;
+}
+.service-banner_content-button form button:hover svg {
+  fill: #353535;
 }
 .service-banner_content-button span {
   font-size: 12px;
@@ -437,6 +447,50 @@ html, body {
     fill: #fff;
   }
 }
+.service-four {
+  padding-top: 40px;
+}
+.service-four h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.service-four_item {
+  padding: 45px 40px;
+  height: 260px;
+  margin-top: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  color: #fff;
+}
+.service-four_item-number {
+  margin-bottom: 10px;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 60px;
+  color: #fd970b;
+}
+.service-four_item-title {
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 900;
+}
+.service-four_item-text {
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 400;
+}
+.service-four_btn {
+  text-align: center;
+  margin-top: 30px;
+}
+.service-four_btn a {
+  padding: 20px 80px;
+}
+
 @media screen and (max-width: 400px) {
   .service-about_items {
     font-size: 10px;
@@ -477,6 +531,37 @@ html, body {
     width: 80%;
     text-align: center;
     font-size: 14px;
+    line-height: 12px;
+  }
+
+  .service-four {
+    padding-top: 40px;
+  }
+  .service-four h3 {
+    font-size: 35px !important;
+  }
+  .service-four_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px !important;
+    padding: 0 5px 0 10px !important;
+  }
+  .service-four_item-number {
+    margin-bottom: 0;
+    margin-right: 5px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .service-four_item-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    word-wrap: break-word;
+  }
+  .service-four_item-text {
+    font-size: 12px;
     line-height: 12px;
   }
 }
@@ -523,6 +608,11 @@ html, body {
   }
   .service-about_trigger {
     height: auto;
+  }
+
+  .service-four_item {
+    height: 180px;
+    padding: 30px 20px;
   }
 }
 @media screen and (max-width: 995px) {

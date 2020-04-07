@@ -65,33 +65,7 @@
                     font-size: 18px;
                     font-weight: 800;
                 }
-                .btn-custom { 
-                    a { 
-                        display: inline-block;
-                        padding: 14px 30px;
-                        margin-left: 16px;
-
-                        font-size: 12px;
-                        line-height: 10px;
-                        font-weight: 800;
-                        text-transform: uppercase;
-                        background-image: -moz-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
-                        background-image: -webkit-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
-                        background-image: -ms-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
-                        box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.3);
-                        border-radius: 25px;
-                        color: #ffffff;
-
-                        transition: 300ms ease;
-
-                        &:hover { 
-                            box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.64);
-                            text-decoration: none; 
-                        }
-                    }
-                     
-                      
-                }
+               
             }
             &-select { 
                 display: flex;
@@ -172,4 +146,33 @@
             color: #fbe947;
         }
     }
+}
+
+.btn-custom { 
+    a { 
+        display: inline-block;
+        padding: 14px 30px;
+        margin-left: 16px;
+
+        font-size: 12px;
+        line-height: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        background-image: -moz-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
+        background-image: -webkit-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
+        background-image: -ms-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
+        box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.3);
+        border-radius: 25px;
+        color: #ffffff;
+
+        transition: 300ms ease;
+
+        &:hover { 
+            box-shadow: 0px 11px 10px 0px rgba(173, 172, 171, 0.64);
+            text-decoration: none; 
+            color: #fff;
+        }
+    }
+     
+      
 }

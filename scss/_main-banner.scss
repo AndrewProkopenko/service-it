@@ -96,11 +96,20 @@
                     border: none;
                     outline: none;
                     border-radius: 30px;
+
+                    transition: 300ms ease;
                     svg { 
                         height: 1.2em;
                         width: 1em;
                         fill: #000;
                         margin-left: 15px;
+                        transition: 300ms ease;
+                    }
+                    &:hover { 
+                        color: rgb(53, 53, 53);
+                    }
+                    &:hover svg{ 
+                        fill: rgb(53, 53, 53);
                     }
                   
                       

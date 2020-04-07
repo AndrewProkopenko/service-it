@@ -65,6 +65,36 @@
             }
         }
     }
+    .service-four { 
+        padding-top: 40px;
+        h3 { 
+           font-size: 35px !important;
+        }
+        &_item { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 120px !important; 
+            padding: 0 5px 0 10px !important;
+            &-number {
+                margin-bottom: 0; 
+                margin-right: 5px;
+                font-size: 30px;  
+                line-height: 30px;
+            }
+            &-title {
+                margin-bottom: 10px; 
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 16px; 
+                word-wrap: break-word;
+            }
+            &-text {
+                font-size: 12px;
+                line-height: 12px; 
+            }
+        }
+    }
     
 }
 @media screen and (max-width: 770px) {
@@ -127,6 +157,13 @@
             height: auto;
         }
     }
+    .service-four {   
+        &_item { 
+            height: 180px;
+            padding: 30px 20px; 
+        }
+    }
+     
  }
 @media screen and (max-width: 995px) { 
     .service-header { 

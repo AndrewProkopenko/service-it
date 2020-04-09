@@ -11,6 +11,7 @@
         min-height: 490px;
     }
     &-item { 
+
         &:hover { 
             padding-bottom: 30px;
             .service-five-item_btn { 
@@ -23,7 +24,8 @@
                 }
           }
         }
-        
+         
+
         border-radius: 4px;
         background-color: rgb(255, 255, 255); 
         box-shadow: 0px 14px 62px 0px rgba(0, 0, 0, 0.16); 
@@ -45,6 +47,7 @@
                 font-weight: 800;
             }
             &__paragraph { 
+                min-height: 200px;
                 font-size: 14px;
                 line-height: 16px;
                 font-weight: 400;

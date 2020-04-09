@@ -1,10 +1,24 @@
 ;(function(){
     const anchors = document.querySelectorAll('a[href*="#"]'); 
+ 
+    // for (let anchor of anchors) { 
+    //     anchor.addEventListener("click", function(event) { 
+    //         event.preventDefault(); 
+    //         console.log('fuck')
+    //         const blockID = anchor.getAttribute('href');
+    //         document.querySelector('' + blockID).scrollIntoView({
+    //             behavior: "smooth", 
+    //             block: "start"
+    //         })
+    //     })
+    // }
+    
 
-    for (let anchor of anchors) { 
-        anchor.addEventListener("click", function(event) { 
-            event.preventDefault();  
-            const blockID = anchor.getAttribute('href');
+    for(let i = 0; i<anchors.length; i++) { 
+        anchors[i].addEventListener("click", function(event) { 
+            event.preventDefault(); 
+            console.log(anchors)
+            const blockID = anchors[i].getAttribute('href');
             document.querySelector('' + blockID).scrollIntoView({
                 behavior: "smooth", 
                 block: "start"
@@ -12,6 +26,7 @@
         })
     }
 }());
+
 
  
 function initMap() {
@@ -23,9 +38,7 @@ function initMap() {
  
 
       var icon = { 
-          path: `M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
-          c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719
-          c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z`,
+          path: "M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035 c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.71 c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z",
           fillColor: '#7737fb',
           fillOpacity: 1, 
           anchor: new google.maps.Point(0,0),
@@ -48,25 +61,34 @@ function initMap() {
    $(".tel-mask").mask("+38(999) 999-9999");
    });
  
+ 
   
 let modalBtn = document.querySelectorAll('.js-modal-btn a'),
-    modalCont = document.querySelector('.js-modal'),
-    modalCloseCont = document.querySelector('.js-modal .service-modal-container'),
-    modalCloseIcon = document.querySelectorAll('.modal-close'),
-    closeBtn = document.querySelector('.js-close-bnt'),
-    modalContact = document.querySelector('.service-modal-container_contact'),
-    modalEnd = document.querySelector('.service-modal-container_end'),
-    modalPolicyBtn = document.querySelector('.js-modal-policy'),
-    modalPolicy = document.querySelector('.service-modal-container_policy')
-    
+modalCont = document.querySelector('.js-modal'),
+modalCloseCont = document.querySelector('.js-modal .service-modal-container'),
+modalCloseIcon = document.querySelectorAll('.modal-close'),
+closeBtn = document.querySelector('.js-close-bnt'),
+modalContact = document.querySelector('.service-modal-container_contact'),
+modalEnd = document.querySelector('.service-modal-container_end'),
+modalPolicyBtn = document.querySelector('.js-modal-policy'),
+modalPolicy = document.querySelector('.service-modal-container_policy')
 
 
-modalBtn.forEach( (item, index) => { 
-modalBtn[index].addEventListener('click', openModal)
-})
-modalCloseIcon.forEach( (item, index) => { 
-modalCloseIcon[index].addEventListener('click', closeModal)
-}) 
+
+// modalBtn.forEach( (item, index) => { 
+// modalBtn[index].addEventListener('click', openModal)
+// })
+for (let i = 0 ; i< modalBtn.length; i++) { 
+modalBtn[i].addEventListener('click', openModal)
+}
+
+
+// modalCloseIcon.forEach( (item, index) => { 
+// modalCloseIcon[index].addEventListener('click', closeModal)
+// }) 
+for (let i = 0 ; i< modalCloseIcon.length; i++) { 
+modalCloseIcon[i].addEventListener('click', closeModal)
+}
 
 modalCont.addEventListener('click', closeModalProps) 
 
@@ -90,11 +112,11 @@ modalPolicy.classList.remove('show')
 }
 function closeModalProps(e) { 
 if( e.target == modalCont ||  e.target == modalCloseCont) {
-    document.body.classList.remove('overflow-hidden')
-    modalCont.classList.remove('show')
-    modalEnd.classList.remove('show')
-    modalContact.classList.remove('hide')
-    modalPolicy.classList.remove('show')
+document.body.classList.remove('overflow-hidden')
+modalCont.classList.remove('show')
+modalEnd.classList.remove('show')
+modalContact.classList.remove('hide')
+modalPolicy.classList.remove('show')
 }  
 }
 
@@ -111,14 +133,13 @@ modalContact.classList.remove('hide')
 }
 
 function openModalPolicy (e) { 
-    document.body.classList.add('overflow-hidden')
-    e.preventDefault()
-    modalCont.classList.add('show') 
+document.body.classList.add('overflow-hidden')
+e.preventDefault()
+modalCont.classList.add('show') 
 
-    modalPolicy.classList.add('show')
-    modalContact.classList.add('hide')
+modalPolicy.classList.add('show')
+modalContact.classList.add('hide')
 }
- 
  
     new Selectr('#yourcity', { 
         searchable: false
@@ -143,29 +164,43 @@ let tableRow = document.querySelectorAll('.service-table tbody tr'),
     flag = 0; 
 
 
-tableRow.forEach( (item, i) => { 
+for (let i = 0 ; i< tableRow.length; i++) { 
     if( i >= 10) { 
         tableRow[i].classList.add('d-none')
     }
-})
+}
+// tableRow.forEach( (item, i) => { 
+//     if( i >= 10) { 
+//         tableRow[i].classList.add('d-none')
+//     }
+// })
 
 tableBtn.addEventListener('click', moreRow) 
 
 function moreRow (e) { 
     e.preventDefault()
+    console.log('ie')
     if(flag == 0) {  
-        tableRow.forEach( (item, i) => { 
+         for (let i = 0 ; i< tableRow.length; i++) { 
             tableRow[i].classList.remove('d-none') 
-        })
+        }
+        // tableRow.forEach( (item, i) => { 
+        //     tableRow[i].classList.remove('d-none') 
+        // })
         tableBtnLink.innerHTML = "скрыть";
         flag = 1; 
     }
     else { 
-        tableRow.forEach( (item, i) => { 
+        for (let i = 0 ; i< tableRow.length; i++) { 
             if( i >= 10) { 
                 tableRow[i].classList.add('d-none')
             }
-        })
+        }
+        // tableRow.forEach( (item, i) => { 
+        //     if( i >= 10) { 
+        //         tableRow[i].classList.add('d-none')
+        //     }
+        // })
         tableBtnLink.innerHTML = "показать все";
         flag = 0;
     }

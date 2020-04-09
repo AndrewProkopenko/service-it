@@ -9,6 +9,7 @@
     .service-five { 
         &-col {  
             width: 25%; 
+            margin-bottom: 20px;
         } 
     }
    
@@ -336,6 +337,7 @@
                 &__head {  
                 }
                 &__paragraph {  
+                    min-height: 160px;
                 }
             }
             &_btn { 
@@ -611,6 +613,7 @@
                 &__paragraph {
                     font-size: 12px;
                     line-height: 14px;  
+                    min-height: 60px;
                 }
             }
             &_btn {  

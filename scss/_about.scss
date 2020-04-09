@@ -43,6 +43,9 @@
             margin-bottom: 5px;
             fill: #fff;
         }
+        span { 
+            width: 100%;
+        }
     }
     &_trigger-section { 
         margin-top: 70px;
@@ -53,8 +56,9 @@
             
             box-shadow: 0px 11px 35px 0px rgba(173, 172, 171, 0.64);
             animation: tg-an 500ms ease forwards;
-           
-            svg {  
+            background-image: -ms-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
+            svg { 
+                fill: #fff;  
                 animation: tg-svg-an 500ms ease-in forwards ;
             }
             .more a { 

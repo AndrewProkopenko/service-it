@@ -5,9 +5,14 @@
     position: fixed;
     z-index: 999999;
     width: 100%;
-    height: 100%;
+    height: 100%; 
+
+    justify-content: center;
+    align-items: center;
+
     background: rgba(0, 0, 0, .85);
     &-container { 
+       
         &_header {
             background: #fff;
             margin-top: 150px;
@@ -31,7 +36,7 @@
                 }
             }
          }
-        &_contact, &_end { 
+        &_contact, &_end, &_policy { 
             position: relative;
 
             width: 750px; 
@@ -173,6 +178,10 @@
                 }   
             }
         }
+        &_policy { 
+            display: none;
+            margin-top: 10px;
+        }
         &_end {
             display: none;
             .btn-custom { 
@@ -204,13 +213,20 @@
     }
 } 
 .js-modal.show { 
-    display: block;
+    display: flex;
     animation: showModal 400ms ease-in-out  ;
 }
 .service-modal-container_contact.hide { 
     display: none;
 }
 .service-modal-container_end.show { 
+    display: block;
+    animation: showEnd 400ms ease-in-out  ;
+}
+.service-modal-container_policy.hide { 
+    display: none;
+}
+.service-modal-container_policy.show { 
     display: block;
     animation: showEnd 400ms ease-in-out  ;
 }

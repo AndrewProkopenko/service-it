@@ -1,7 +1,6 @@
 .service-banner { 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  
+    background-color: #26261e;
     
     color: #fff;
     &_content { 
@@ -111,7 +110,10 @@
                         transition: 300ms ease;
                     }
                     &:hover { 
-                        color: rgb(53, 53, 53);
+                        color: rgb(36, 36, 36);
+                        background-image: -moz-linear-gradient( 90deg, rgb(255, 102, 0) 0%, rgb(251,175,56) 100%);
+                        background-image: -webkit-linear-gradient( 90deg, rgb(255, 102, 0) 0%, rgb(251,175,56) 100%);
+                        background-image: -ms-linear-gradient( 90deg, rgb(255, 102, 0) 0%, rgb(251,175,56) 100%);
                     }
                     &:hover svg{ 
                         fill: rgb(53, 53, 53);
@@ -150,7 +152,7 @@
             background-image: -webkit-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
             background-image: -ms-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
             box-shadow: 0px 11px 35px 0px rgba(173, 172, 171, 0.64);
-            cursor: pointer;
+             
  
 
             &:hover {  

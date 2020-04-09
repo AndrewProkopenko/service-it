@@ -40,6 +40,14 @@
                 height: 16px;
                 fill: #7737fb;
             }
+            a { 
+                color: inherit;
+                transition: 300ms ease;
+                &:hover  {
+                    text-decoration: none;
+                    color: #8043fa;
+                }
+            }
         }
         form { 
             max-width: 447px;

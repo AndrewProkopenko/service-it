@@ -48,8 +48,23 @@ $font-family-sans-serif:  'Circe';
     }
 }
 
+button:focus {  
+    outline: none;
+}
+input:focus {  
+    outline: none;
+}
+select:focus { 
+    outline: none;
+}
+.selectr-selected:focus { 
+    outline: none;
+}
 
-
+.js-table-btn a { 
+    color: #fff;
+    cursor: pointer;
+}
 // ::-moz-focus-inner { 
 //     outline: none !important;
 //     display: none; 

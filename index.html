@@ -11,61 +11,19 @@
 
     <!-- modal window start -->
     <div class="service-modal js-modal">
-        <div class="service-modal-container">
-            <div class="service-modal-container_header">
-                <div class="container-fluid p-0">
-                    <div class="container">
-                        <div class="service-footer">
-                            <a class="service-footer_logo" href="#top">
-                                <div class="service-footer_logo__image">
-                                    <!-- <svg>
-                                        <use xlink:href="#logo"></use>
-                                    </svg> -->
-                                </div>
-                                <div class="service-footer_logo__text">
-                                    <div>SERVICE<span>IT</span>.KIEV.UA</div>
-                                    <div>компьютерный <br> помощник</div>
-                                </div>
-                            </a> 
-                            <div class="service-footer_menu">
-                                <ul>
-                                    <li>
-                                        <a class="nav-item active" href="#top">Главная <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-item" href="#about">О нас</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-item" href="#our-work">Как мы работаем</a> 
-                                    </li>
-                                    <li>
-                                        <a class="nav-item" href="#service">Услуги</a> 
-                                    </li>
-                                    <li>
-                                        <a class="nav-item" href="#reviews">Отзывы</a> 
-                                    </li>
-                                    <li>
-                                        <a class="nav-item" href="#contacts">Контакты</a> 
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="service-footer_tools ">
-                                <div class="service-footer_tools-phone">
-                                    <div class="number">
-                                        <svg> 
-                                            <use xlink:href="#phone1"></use>
-                                        </svg>
-                                        + 7 (800) 550-96-96
-                                    </div>
-                                    <div class="btn-custom">
-                                        <a href="#"> Оставить заявку (зачем тут эта кнопка) </a>
-                                    </div>
-                                </div>
-                            </div> 
+        <div class="service-modal-container">            
+            <div class="service-modal-container_policy">
+                <div class="service-modal-container_policy__item">
+                    <div class="modal-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
                     </div>
-                    </div>
+                    <h3>Политика конфидециальности</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, esse modi repudiandae aperiam consequuntur blanditiis unde fuga expedita quo repellendus molestias voluptatem assumenda placeat sit mollitia neque quod in pariatur!</p>
                 </div>
             </div>
+            
             <div class="service-modal-container_contact">
                 <div class="modal-close">
                     <svg>
@@ -78,7 +36,7 @@
                     <h5>Заполните форму ниже и мы перезвоним вам в течении 5 минут</h5>
                     <form name="modalForm" onsubmit="submitModal()"> 
                         <input type="text" placeholder="Ваше имя" required>
-                        <input type="tel" placeholder="Ваш телефон" required> 
+                        <input  class="tel-mask" type="text" placeholder="Ваш телефон" required> 
                         <div class="btn-cont">
                             <button type="submit">Перезвоните мне</button>
                         </div>
@@ -115,9 +73,7 @@
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="service-header_logo" href="#top">
                             <div class="service-header_logo__image">
-                                <!-- <svg>
-                                    <use xlink:href="#logo"></use>
-                                </svg> -->
+                               
                             </div>
                             <div class="service-header_logo__text">
                                 <div>SERVICE<span>IT</span>.KIEV.UA</div>
@@ -145,8 +101,8 @@
                                         <div class="number">
                                             <svg> 
                                                 <use xlink:href="#phone1"></use>
-                                            </svg>
-                                            + 7 (800) 550-96-96
+                                            </svg> 
+                                            <a href="tel:+7800550-96-96"> + 7 (800) 550-96-96</a>
                                         </div>
                                         <div class="btn-custom js-modal-btn">
                                             <a href="google.com"> связаться с нами </a>
@@ -156,7 +112,7 @@
                                 
                                 <div class="navbar-nav service-header_menu">
                                    <div class="container mobile-menu">
-                                        <a class="nav-item active" href="#top">Главная <span class="sr-only">(current)</span></a>
+                                        <a class="nav-item" href="#top">Главная <span class="sr-only">(current)</span></a>
                                         <a class="nav-item" href="#about">О нас</a>
                                         <a class="nav-item" href="#our-work">Как мы работаем</a> 
                                         <a class="nav-item" href="#service">Услуги</a> 
@@ -176,7 +132,7 @@
     
     <!-- main screen start -->
     <div class="container-fluid p-0">
-        <div class="service-banner" style="background-image: url(images/bg-main.png);">
+        <div class="service-banner">
             <div class="container">
                <div class="row">
                    <div class="col-12 col-lg-7">
@@ -191,7 +147,7 @@
                             <div class="service-banner_content-button">
                                 <p>Воспользуйтесь услугой прямо сейчас и получите бесплатную диагностику!</p>
                                 <form action="#">
-                                    <input type="text" placeholder="Ваш телефон" required>
+                                    <input  class="tel-mask" type="text" placeholder="Ваш телефон" required>
                                     <button type="submit">
                                         Заказать услугу 
                                         <svg> 
@@ -451,7 +407,7 @@
                         <div class="service-about_trigger">
                             <div class="service-about_trigger__head">
                                 <svg>
-                                    <use xlink:href="/#working"></use>
+                                    <use xlink:href="#working"></use>
                                 </svg>  
                                 <h5>Работа в радость</h5>
                             </div>
@@ -508,7 +464,7 @@
         <div class="service-four section">
             <h3>Как мы работаем</h3>
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="service-four_item" style=" background-image: url(images/fourscreen1.png)">
                         <div class="service-four_item-number">01</div>
                         <div>
@@ -517,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="service-four_item" style=" background-image: url(images/fourscreen2.png)">
                         <div class="service-four_item-number">02</div>
                         <div>
@@ -526,7 +482,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="service-four_item" style=" background-image: url(images/fourscreen3.png)">
                         <div class="service-four_item-number">03</div>
                         <div>
@@ -535,7 +491,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="service-four_item" style=" background-image: url(images/fourscreen4.png)">
                         <div class="service-four_item-number">04</div>
                         <div>
@@ -544,7 +500,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="service-four_item" style=" background-image: url(images/fourscreen5.png)">
                         <div class="service-four_item-number">05</div>
                         <div>
@@ -553,7 +509,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="service-four_item" style=" background-image: url(images/fourscreen6.png)">
                         <div class="service-four_item-number">06</div>
                         <div>
@@ -718,12 +674,28 @@
                     <td>Ремонт шлейфа клавиатуры ноутбука</td>
                     <td>от 400 грн</td>
                   </tr> 
+                  <tr>
+                    <td>Замена внутренних шлейфов</td>
+                    <td>от 500 грн</td>
+                  </tr> 
+                  <tr>
+                    <td>Ремонт шлейфа ноутбука</td>
+                    <td>от 700 грн</td>
+                  </tr> 
+                  <tr>
+                    <td>Замена внутренних шлейфов</td>
+                    <td>от 500 грн</td>
+                  </tr> 
+                  <tr>
+                    <td>Ремонт шлейфа клавиатуры ноутбука</td>
+                    <td>от 400 грн</td>
+                  </tr> 
                 </tbody>
             </table>
 
             <div class="service-table_footer">
-                <div class="btn-custom">
-                    <a href="#">Показать все</a>
+                <div class=" js-table-btn btn-custom">
+                    <a href=" ">Показать все</a>
                 </div>
                 <div class="service-table_footer-pay">
                     <span>Возможность безналичной оплаты</span>
@@ -745,7 +717,7 @@
 
     <!-- order block start  -->
     <div class="container-fluid p-0">
-        <div class="service-order" style="background-image: url(images/bg3.png);">
+        <div class="service-order">
             <div class="container">
                 <div class="row">
                     <div class="offset-lg-2 offset-xl-5"> </div>
@@ -754,7 +726,7 @@
                             <h3>Заказать бесплатную <br>консультацию специалиста</h3>
                             <div class="service-order_item-form">
                                 <form action="#">
-                                    <input type="text" placeholder="Ваш номер телефонa" required>
+                                    <input  class="tel-mask" type="text" placeholder="Ваш номер телефонa" required>
                                     <button type="submit">
                                         Вызвать мастера
                                     </button>
@@ -1033,12 +1005,12 @@
                                 <svg>
                                     <use xlink:href='#phone1'></use>
                                 </svg>
-                                <span>8 (812) 603-2681</span>
+                                <a href="tel:8 (812) 603-2681">8 (812) 603-2681</a>
                             </div>
                             <form action="#">
                                 <p>Задайте нам вопрос</p>
                                 <input type="text" placeholder="Ваше имя" required>
-                                <input type="tel" placeholder="Ваш телефон" required>
+                                <input class="tel-mask" type="text" placeholder="Ваш телефон" required>
                                 <textarea name="" id="" cols="30" rows="10" placeholder="Ваш коментарий" ></textarea>
                                 <div class="btn-cont">
                                     <button type="submit">Отправить</button>
@@ -1101,13 +1073,13 @@
                                     <svg> 
                                         <use xlink:href="#phone1"></use>
                                     </svg>
-                                    + 7 (800) 550-96-96
+                                    <a href="tel:+ 7 (800) 550-96-96">+ 7 (800) 550-96-96</a>
                                 </div>
-                                <div class="btn-custom">
+                                <div class="btn-custom js-modal-btn">
                                     <a href="#"> заказать звонок </a>
                                 </div>
                             </div>
-                            <div class="service-footer_tools-policy">
+                            <div class="service-footer_tools-policy js-modal-policy">
                                 <a href="#">
                                     Политика конфидециальности
                                 </a>
@@ -1343,20 +1315,16 @@
             </g>
         </symbol>
         <symbol id="working" viewBox="0 0 512 512"> 
-            <g id="XMLID_3114_">
-                <g id="XMLID_536_">
-                    <path id="XMLID_559_"
-                        d="m256 324c-23.159 0-42 18.841-42 42s18.841 42 42 42 42-18.841 42-42-18.841-42-42-42zm0 64c-12.131 0-22-9.869-22-22s9.869-22 22-22 22 9.869 22 22-9.869 22-22 22z" />
-                    <path id="XMLID_562_"
-                        d="m503.729 404.328-55.729-108.296v-26.032c0-27.57-22.43-50-50-50h-61.194c8.585-14.402 13.194-30.887 13.194-47.992v-104.488c0-37.23-30.29-67.52-67.521-67.52h-144c-5.522 0-10 4.477-10 10v50.187c0 24.838 13.491 46.572 33.521 58.298v53.523c0 17.105 4.609 33.591 13.194 47.992h-61.194c-27.57 0-50 22.43-50 50v26.032l-55.729 108.295c-11.88 23.088-10.901 50.106 2.622 72.273 13.523 22.166 37.097 35.4 63.107 35.4h137.127c5.522 0 10-4.478 10-10s-4.478-10-10-10h-127.127v-222c0-16.542 13.458-30 30-30h284c16.542 0 30 13.458 30 30v222h-126.873c-5.522 0-10 4.478-10 10s4.478 10 10 10h136.873c.007 0 .015-.001.022-.001s.015.001.022.001c25.966 0 49.54-13.234 63.063-35.4 13.523-22.167 14.502-49.185 2.622-72.272zm-475.762 61.856c-9.861-16.165-10.576-35.868-1.912-52.704l37.945-73.739v82.259h-5.5c-5.522 0-10 4.478-10 10s4.478 10 10 10h5.5v49.093c-14.892-2.752-27.935-11.634-36.033-24.909zm120.512-446.184h134c26.204 0 47.521 21.317 47.521 47.52v40.187h-134c-26.203 0-47.521-21.317-47.521-47.52zm33.521 152.008v-45.77c4.519.957 9.2 1.469 14 1.469h134v44.301c0 17.715-6.268 34.596-17.715 47.992h-112.57c-11.447-13.396-17.715-30.277-17.715-47.992zm302.033 294.176c-8.095 13.269-21.127 22.148-36.033 24.904v-49.088h5.5c5.522 0 10-4.478 10-10s-4.478-10-10-10h-5.5v-82.259l37.945 73.738c8.664 16.836 7.95 36.54-1.912 52.705z" />
-                    <path id="XMLID_566_"
-                        d="m220 165c-2.63 0-5.21 1.07-7.07 2.93s-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.07 4.44 2.93 7.07 2.93 5.21-1.07 7.069-2.93c1.86-1.86 2.931-4.44 2.931-7.07s-1.07-5.21-2.931-7.07c-1.859-1.86-4.439-2.93-7.069-2.93z" />
-                    <path id="XMLID_567_"
-                        d="m299.069 167.93c-1.859-1.86-4.439-2.93-7.069-2.93s-5.21 1.07-7.07 2.93-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.07 4.44 2.93 7.07 2.93 5.21-1.07 7.069-2.93c1.86-1.86 2.931-4.44 2.931-7.07s-1.07-5.21-2.931-7.07z" />
-                    <path id="XMLID_568_"
-                        d="m256 492c-2.63 0-5.21 1.069-7.07 2.93s-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.069c1.86 1.86 4.44 2.931 7.07 2.931s5.21-1.07 7.069-2.931c1.861-1.859 2.931-4.439 2.931-7.069s-1.07-5.21-2.931-7.07c-1.859-1.861-4.439-2.93-7.069-2.93z" />
-                </g>
-            </g>
+            <path id="XMLID_559_"
+                d="m256 324c-23.159 0-42 18.841-42 42s18.841 42 42 42 42-18.841 42-42-18.841-42-42-42zm0 64c-12.131 0-22-9.869-22-22s9.869-22 22-22 22 9.869 22 22-9.869 22-22 22z" />
+            <path id="XMLID_562_"
+                d="m503.729 404.328-55.729-108.296v-26.032c0-27.57-22.43-50-50-50h-61.194c8.585-14.402 13.194-30.887 13.194-47.992v-104.488c0-37.23-30.29-67.52-67.521-67.52h-144c-5.522 0-10 4.477-10 10v50.187c0 24.838 13.491 46.572 33.521 58.298v53.523c0 17.105 4.609 33.591 13.194 47.992h-61.194c-27.57 0-50 22.43-50 50v26.032l-55.729 108.295c-11.88 23.088-10.901 50.106 2.622 72.273 13.523 22.166 37.097 35.4 63.107 35.4h137.127c5.522 0 10-4.478 10-10s-4.478-10-10-10h-127.127v-222c0-16.542 13.458-30 30-30h284c16.542 0 30 13.458 30 30v222h-126.873c-5.522 0-10 4.478-10 10s4.478 10 10 10h136.873c.007 0 .015-.001.022-.001s.015.001.022.001c25.966 0 49.54-13.234 63.063-35.4 13.523-22.167 14.502-49.185 2.622-72.272zm-475.762 61.856c-9.861-16.165-10.576-35.868-1.912-52.704l37.945-73.739v82.259h-5.5c-5.522 0-10 4.478-10 10s4.478 10 10 10h5.5v49.093c-14.892-2.752-27.935-11.634-36.033-24.909zm120.512-446.184h134c26.204 0 47.521 21.317 47.521 47.52v40.187h-134c-26.203 0-47.521-21.317-47.521-47.52zm33.521 152.008v-45.77c4.519.957 9.2 1.469 14 1.469h134v44.301c0 17.715-6.268 34.596-17.715 47.992h-112.57c-11.447-13.396-17.715-30.277-17.715-47.992zm302.033 294.176c-8.095 13.269-21.127 22.148-36.033 24.904v-49.088h5.5c5.522 0 10-4.478 10-10s-4.478-10-10-10h-5.5v-82.259l37.945 73.738c8.664 16.836 7.95 36.54-1.912 52.705z" />
+            <path id="XMLID_566_"
+                d="m220 165c-2.63 0-5.21 1.07-7.07 2.93s-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.07 4.44 2.93 7.07 2.93 5.21-1.07 7.069-2.93c1.86-1.86 2.931-4.44 2.931-7.07s-1.07-5.21-2.931-7.07c-1.859-1.86-4.439-2.93-7.069-2.93z" />
+            <path id="XMLID_567_"
+                d="m299.069 167.93c-1.859-1.86-4.439-2.93-7.069-2.93s-5.21 1.07-7.07 2.93-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.07 4.44 2.93 7.07 2.93 5.21-1.07 7.069-2.93c1.86-1.86 2.931-4.44 2.931-7.07s-1.07-5.21-2.931-7.07z" />
+            <path id="XMLID_568_"
+                d="m256 492c-2.63 0-5.21 1.069-7.07 2.93s-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.069c1.86 1.86 4.44 2.931 7.07 2.931s5.21-1.07 7.069-2.931c1.861-1.859 2.931-4.439 2.931-7.069s-1.07-5.21-2.931-7.07c-1.859-1.861-4.439-2.93-7.069-2.93z" />
         </symbol>
         <symbol id="settings" viewBox="0 0 512 512">  
             <path
@@ -1479,6 +1447,16 @@
          
 <script src="dist/all.js"></script> 
 
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+            $('header').addClass("sticky");
+        }
+        else{
+            $('header').removeClass("sticky");
+        }
+    });
+</script>
 
 
 </body>

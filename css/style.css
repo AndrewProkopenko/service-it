@@ -229,7 +229,7 @@ header.sticky .service-header_collapse__tools {
   order: 2;
   width: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 0;
 }
 header.sticky .service-header_collapse__tools-phone {
@@ -1375,6 +1375,9 @@ header.sticky .service-header_menu a.active {
   align-items: center;
   background: rgba(0, 0, 0, 0.85);
 }
+.service-modal-container {
+  width: 100%;
+}
 .service-modal-container_header {
   background: #fff;
   margin-top: 150px;
@@ -1395,7 +1398,8 @@ header.sticky .service-header_menu a.active {
 }
 .service-modal-container_contact, .service-modal-container_end, .service-modal-container_policy {
   position: relative;
-  width: 750px;
+  width: 100%;
+  max-width: 750px;
   margin: 0 auto;
   margin-bottom: 100px;
   background: #fff;
@@ -1632,6 +1636,13 @@ header.sticky .service-header_menu a.active {
     bottom: auto;
     right: auto;
   }
+
+  header.sticky .mobile-menu {
+    padding: 0 10px !important;
+  }
+  header.sticky .service-header_menu a {
+    margin-right: 5px;
+  }
 }
 @media screen and (max-width: 995px) {
   .service-header {
@@ -1753,6 +1764,10 @@ header.sticky .service-header_menu a.active {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  header.sticky .service-header_menu a {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 770px) {
@@ -12085,6 +12100,10 @@ select:focus {
   outline: none;
 }
 
+textarea:focus {
+  outline: none;
+}
+
 .selectr-selected:focus {
   outline: none;
 }
@@ -12092,6 +12111,10 @@ select:focus {
 .js-table-btn a {
   color: #fff;
   cursor: pointer;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@
 
     background: rgba(0, 0, 0, .85);
     &-container { 
-       
+        width: 100%;
         &_header {
             background: #fff;
             margin-top: 150px;
@@ -39,7 +39,8 @@
         &_contact, &_end, &_policy { 
             position: relative;
 
-            width: 750px; 
+            width: 100%;
+            max-width: 750px; 
             margin: 0 auto;
             margin-bottom: 100px;
 

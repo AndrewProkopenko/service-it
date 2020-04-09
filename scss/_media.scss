@@ -43,6 +43,14 @@
             }
         }
     }
+    header.sticky { 
+        .mobile-menu { 
+            padding: 0 10px !important;
+        }
+        .service-header_menu a { 
+            margin-right: 5px;
+        }
+    }
 } 
 
 @media screen and (max-width: 995px) { 
@@ -225,6 +233,9 @@
              }
         }
     } 
+    header.sticky .service-header_menu a { 
+        margin-right: 0;
+    }
     
 }
 @media screen and (max-width: 770px) {

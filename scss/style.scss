@@ -57,6 +57,9 @@ input:focus {
 select:focus { 
     outline: none;
 }
+textarea:focus { 
+    outline: none;
+}
 .selectr-selected:focus { 
     outline: none;
 }
@@ -64,6 +67,10 @@ select:focus {
 .js-table-btn a { 
     color: #fff;
     cursor: pointer;
+}
+
+html, body { 
+    overflow-x: hidden;
 }
 // ::-moz-focus-inner { 
 //     outline: none !important;

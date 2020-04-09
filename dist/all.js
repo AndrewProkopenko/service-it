@@ -149,8 +149,7 @@ tableRow.forEach( (item, i) => {
     }
 })
 
-tableBtn.addEventListener('click', moreRow)
-console.log( tableRow)
+tableBtn.addEventListener('click', moreRow) 
 
 function moreRow (e) { 
     e.preventDefault()

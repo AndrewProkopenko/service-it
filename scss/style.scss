@@ -3,9 +3,12 @@
 
 @import "https://unpkg.com/swiper/css/swiper.min.css";
 
+@import "https://unpkg.com/mobius1-selectr@latest/dist/selectr.min.css";
+
+
 html, body { 
     font-size: 16px;
-    background: #fff;
+    background: #fff; 
     color: #000;
 }
 $primary: #611afd;
@@ -31,7 +34,7 @@ $font-family-sans-serif:  'Circe';
 
 @import "_media";
 
-@import "../node_modules/mobius1-selectr/dist/selectr.min.css";
+// @import "../node_modules/mobius1-selectr/dist/selectr.min.css";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 

@@ -1,6 +1,8 @@
 @import "../fonts/Circe/stylesheet.css";
 @import "../fonts/Montserrat/Montserrat/stylesheet.css";
 
+@import "https://unpkg.com/swiper/css/swiper.min.css";
+
 html, body { 
     font-size: 16px;
     background: #fff;
@@ -15,12 +17,17 @@ $font-family-sans-serif:  'Circe';
 @import "_header";
 @import "_main-banner";
 @import "_about";
-@import "_four";
+@import "_four"; 
 @import "_five";
 @import "_table";
 @import "_order";
 @import "_accordion";
 @import "_master";
+@import "_review";
+@import "_also";
+@import "_contact"; 
+@import "_footer"; 
+@import "_modal"; 
 
 @import "_media";
 
@@ -37,6 +44,8 @@ $font-family-sans-serif:  'Circe';
         }
     }
 }
+
+
 
 // ::-moz-focus-inner { 
 //     outline: none !important;

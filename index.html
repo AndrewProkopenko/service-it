@@ -9,15 +9,116 @@
 </head>
 <body>
 
+    <!-- modal window start -->
+    <div class="service-modal js-modal">
+        <div class="service-modal-container">
+            <div class="service-modal-container_header">
+                <div class="container-fluid p-0">
+                    <div class="container">
+                        <div class="service-footer">
+                            <a class="service-footer_logo" href="#top">
+                                <div class="service-footer_logo__image">
+                                    <!-- <svg>
+                                        <use xlink:href="#logo"></use>
+                                    </svg> -->
+                                </div>
+                                <div class="service-footer_logo__text">
+                                    <div>SERVICE<span>IT</span>.KIEV.UA</div>
+                                    <div>компьютерный <br> помощник</div>
+                                </div>
+                            </a> 
+                            <div class="service-footer_menu">
+                                <ul>
+                                    <li>
+                                        <a class="nav-item active" href="#top">Главная <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-item" href="#about">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-item" href="#our-work">Как мы работаем</a> 
+                                    </li>
+                                    <li>
+                                        <a class="nav-item" href="#service">Услуги</a> 
+                                    </li>
+                                    <li>
+                                        <a class="nav-item" href="#reviews">Отзывы</a> 
+                                    </li>
+                                    <li>
+                                        <a class="nav-item" href="#contacts">Контакты</a> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-footer_tools ">
+                                <div class="service-footer_tools-phone">
+                                    <div class="number">
+                                        <svg> 
+                                            <use xlink:href="#phone1"></use>
+                                        </svg>
+                                        + 7 (800) 550-96-96
+                                    </div>
+                                    <div class="btn-custom">
+                                        <a href="#"> Оставить заявку (зачем тут эта кнопка) </a>
+                                    </div>
+                                </div>
+                            </div> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-modal-container_contact">
+                <div class="modal-close">
+                    <svg>
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </div>
+                <div class="service-modal-container_contact__item">
+                   
+                    <h3>Связь с нами</h3>
+                    <h5>Заполните форму ниже и мы перезвоним вам в течении 5 минут</h5>
+                    <form name="modalForm" onsubmit="submitModal()"> 
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Ваш телефон" required> 
+                        <div class="btn-cont">
+                            <button type="submit">Перезвоните мне</button>
+                        </div>
+                    </form>
+                    <span>Нажимая на кнопку "Перезвоните мне" Вы соглашаетесь на обработку Ваших данных</span>
+                </div>
+            </div>
+            <div class="service-modal-container_end">
+                <div class="modal-close">
+                    <svg>
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </div>
+                <div class="service-modal-container_contact__item">
+                   
+                    <h3>Спасибо</h3>
+                    <h5>Мы перезвоним вам в течении 5 минут</h5>
+                    <div class="btn-custom js-close-bnt">
+                        <a>Жду звонка</a>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal window end -->
 
     <!-- header start -->
     <header>
+        <div id="top"></div>
         <div class="container-fluid position-relative">
             <div class="container">
                 <div class="service-header">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="service-header_logo" href="#">
-                            <div class="service-header_logo__image"></div>
+                        <a class="service-header_logo" href="#top">
+                            <div class="service-header_logo__image">
+                                <!-- <svg>
+                                    <use xlink:href="#logo"></use>
+                                </svg> -->
+                            </div>
                             <div class="service-header_logo__text">
                                 <div>SERVICE<span>IT</span>.KIEV.UA</div>
                                 <div>компьютерный <br> помощник</div>
@@ -47,20 +148,20 @@
                                             </svg>
                                             + 7 (800) 550-96-96
                                         </div>
-                                        <div class="btn-custom">
-                                            <a href="#"> связаться с нами </a>
+                                        <div class="btn-custom js-modal-btn">
+                                            <a href="google.com"> связаться с нами </a>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div class="navbar-nav service-header_menu">
                                    <div class="container mobile-menu">
-                                        <a class="nav-item  active" href="#">Главная <span class="sr-only">(current)</span></a>
-                                        <a class="nav-item " href="#">О нас</a>
-                                        <a class="nav-item " href="#">Как мы работаем</a> 
-                                        <a class="nav-item " href="#">Услуги</a> 
-                                        <a class="nav-item " href="#">Отзывы</a> 
-                                        <a class="nav-item " href="#">Контакты</a> 
+                                        <a class="nav-item active" href="#top">Главная <span class="sr-only">(current)</span></a>
+                                        <a class="nav-item" href="#about">О нас</a>
+                                        <a class="nav-item" href="#our-work">Как мы работаем</a> 
+                                        <a class="nav-item" href="#service">Услуги</a> 
+                                        <a class="nav-item" href="#reviews">Отзывы</a> 
+                                        <a class="nav-item" href="#contacts">Контакты</a> 
                                    </div>
                                 </div>
                           </div>
@@ -90,7 +191,7 @@
                             <div class="service-banner_content-button">
                                 <p>Воспользуйтесь услугой прямо сейчас и получите бесплатную диагностику!</p>
                                 <form action="#">
-                                    <input type="text" placeholder="Ваш телефон">
+                                    <input type="text" placeholder="Ваш телефон" required>
                                     <button type="submit">
                                         Заказать услугу 
                                         <svg> 
@@ -165,6 +266,7 @@
 
     <!-- about start -->
     <div class="container">
+        <div id="about"></div>
         <div class="service-about section">
             <div class="row">
                 <div class="col-auto col-lg-6 ">
@@ -400,8 +502,9 @@
     </div>
     <!-- about end -->
 
-    <!-- four start  -->
+    <!-- our-work(five screen) start  -->
     <div class="container">
+        <div id="our-work"></div>
         <div class="service-four section">
             <h3>Как мы работаем</h3>
             <div class="row">
@@ -466,10 +569,11 @@
             </div>
         </div>
     </div>
-    <!-- four end  -->
+    <!-- our-work(five screen) end  -->
 
     <!-- services start  -->
     <div class="container">
+        <div id="service"></div>
         <div class="service-five section">
             <h3>Наши услуги</h3>
             <div class="row">
@@ -650,7 +754,7 @@
                             <h3>Заказать бесплатную <br>консультацию специалиста</h3>
                             <div class="service-order_item-form">
                                 <form action="#">
-                                    <input type="text" placeholder="Ваш номер телефонa">
+                                    <input type="text" placeholder="Ваш номер телефонa" required>
                                     <button type="submit">
                                         Вызвать мастера
                                     </button>
@@ -800,14 +904,225 @@
     </div>
     <!-- masters end -->
 
+    <!-- reviews start -->
+    <div class="container p-0">
+        <div id="reviews"></div>
+        <div class="service-swiper section">
+            <h3>Отзывы о нашей работе</h3>
+            <!-- Swiper -->
+            <div class="swiper-container">
 
- 
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="service-swiper_item">
+                            <div class="service-swiper_item__image" style="background-image: url(images/comment.png);"></div>
+                            <div class="service-swiper_item__icon">“</div>
+                            <div class="service-swiper_item__text">Ребята, огромное Вам спасибо. Пришли, все сделали и даже больше! Ставлю твердую, подчеркиваю твердую, пятерку! Буду советовать всем знакомым и незнакомым))))</div>
+                            <div class="service-swiper_item__name">Виталий Мисюрин</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-swiper_item">
+                            <div class="service-swiper_item__image" style="background-image: url(images/master1.png);"></div>
+                            <div class="service-swiper_item__icon">“</div>
+                            <div class="service-swiper_item__text">Ребята, огромное Вам спасибо. Пришли, все сделали и даже больше! Ставлю твердую, подчеркиваю твердую, пятерку! Буду советовать всем знакомым и незнакомым))))</div>
+                            <div class="service-swiper_item__name">Антон </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-swiper_item">
+                            <div class="service-swiper_item__image" style="background-image: url(images/master2.png);"></div>
+                            <div class="service-swiper_item__icon">“</div>
+                            <div class="service-swiper_item__text">Ребята, огромное Вам спасибо. Пришли, все сделали и даже больше! Ставлю твердую, подчеркиваю твердую, пятерку! Буду советовать всем знакомым и незнакомым))))</div>
+                            <div class="service-swiper_item__name">Виталий </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-swiper_item">
+                            <div class="service-swiper_item__image" style="background-image: url(images/master4.png);"></div>
+                            <div class="service-swiper_item__icon">“</div>
+                            <div class="service-swiper_item__text">Ребята, огромное Вам спасибо. Пришли, все сделали и даже больше! Ставлю твердую, подчеркиваю твердую, пятерку! Буду советовать всем знакомым и незнакомым))))</div>
+                            <div class="service-swiper_item__name">Дения</div>
+                        </div>
+                    </div>
+                    
+                </div>
 
 
+                <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                 <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <svg> 
+                            <use xlink:href="#next"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg> 
+                            <use xlink:href="#next"></use>
+                        </svg>
+                    </div>
+            </div>
 
-    <div class="mt-5 pt-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dicta provident illo error cumque accusantium itaque ut eveniet quidem id quo omnis quibusdam asperiores, distinctio ducimus? Ex repellat odio in maiores et, quo expedita sunt facere consectetur inventore eaque laudantium laborum magnam qui nobis nihil ullam illum nesciunt excepturi? Pariatur, animi! Magni sed reprehenderit ea corporis optio doloribus. Dolorem incidunt dolore eaque nobis temporibus laborum eligendi sit repellat omnis odit voluptas distinctio amet id cum molestiae optio, magnam accusantium modi veniam fugit sequi ipsam aliquam aut? Tempore culpa reiciendis delectus aspernatur corrupti quod consequatur inventore dolorem magnam, aliquam quos? Nemo nostrum odit quos, sint magni ut, laboriosam sit, qui facilis eius placeat beatae nulla reiciendis quaerat pariatur voluptatum nobis rem ea rerum unde. At quae molestiae, debitis accusamus adipisci vitae dicta sed sunt saepe, soluta nisi perferendis quia quod doloribus consectetur expedita dignissimos eligendi! Harum magni dicta et error velit hic suscipit pariatur vel cum nobis eligendi vero rerum non mollitia officiis consequatur culpa modi consequuntur, possimus sit excepturi? Fugit eius eos magnam sequi unde veniam optio obcaecati perferendis nesciunt dolor nemo, at voluptas, atque dolorem numquam tenetur culpa ipsam commodi. Rem officiis harum fugit amet laudantium aliquid voluptate, animi illum similique. Ipsam perferendis dolores inventore. Nam, pariatur! Omnis neque quam magnam repudiandae nesciunt minus cum id animi et illum architecto, enim obcaecati corporis expedita! Deleniti repellat nobis non dicta accusamus! Atque, corporis error architecto voluptatem ad tenetur perspiciatis quas ut consequatur illum maiores, ratione et officiis, laboriosam nihil placeat quaerat earum labore esse. Possimus vero expedita in quo molestias sint repellendus veritatis ea. Consequuntur et aperiam autem, facilis alias laborum sit repudiandae natus adipisci veniam. Praesentium delectus labore laboriosam, nesciunt quod ipsum quae iste cupiditate doloremque consectetur dignissimos similique voluptatum et, voluptatem fugiat rem neque corporis voluptatibus! Sint eos laboriosam architecto, ipsa molestiae cupiditate ut dicta doloribus ipsum, ullam vel deserunt ad voluptates. Non, aliquid! Laborum ipsam alias tempore. Obcaecati possimus officia dignissimos a enim. Voluptas sunt quisquam incidunt unde commodi quibusdam ipsa dolor! Possimus ipsam tempora iste quasi ex dicta ratione et quia atque inventore eveniet voluptatem incidunt quibusdam delectus quos dolorem nesciunt vitae praesentium excepturi, rerum, fugiat necessitatibus labore quis! Officia earum ipsa architecto accusantium quisquam deleniti officiis consequatur obcaecati quod! Soluta, quae ratione? Libero recusandae deserunt quis qui vel officiis at neque! Facere, reprehenderit! Excepturi, distinctio? Vero libero eum amet mollitia ab nulla? Voluptas ad reprehenderit distinctio delectus quod vel eius nisi id error quisquam! Veritatis expedita soluta a mollitia error quidem maxime autem maiores rem itaque nulla ducimus recusandae at, quod libero, nihil, fugiat ipsum similique necessitatibus! Doloremque nam ex nobis, veniam illo asperiores odit tenetur aliquam fugit dolorem voluptatibus cupiditate vero pariatur quam error necessitatibus, eligendi eius tempore, magni deleniti voluptates. Deleniti fuga est laudantium dolores porro dolorum repellendus nostrum, minima, neque dolorem numquam incidunt officia vel animi saepe doloremque voluptate possimus esse sapiente sequi ea eligendi non. Accusamus dicta fugiat quo asperiores, repellat non iure enim exercitationem corporis error, facere nesciunt unde saepe praesentium libero. Deleniti a expedita voluptatem nam itaque aperiam error vel ipsam quod distinctio ipsum recusandae deserunt quibusdam, sit reprehenderit exercitationem dolorum provident? Ratione, iusto a saepe architecto corrupti adipisci neque atque facere consequatur omnis quas rem molestiae quibusdam alias dicta veritatis officiis odit libero rerum fugit! Voluptate animi saepe rerum modi earum dolorem id architecto quibusdam repellendus aliquid voluptas, a eum quos illum, tempore dolor odit quis? Illum debitis praesentium animi distinctio est quidem nostrum doloribus nihil consectetur quia numquam nisi possimus tenetur minima reprehenderit corporis odio cum ex, fugit accusantium libero? Sint numquam placeat dicta quos atque sed perferendis corrupti voluptas ducimus enim cumque harum, saepe voluptatibus ratione molestias aliquam dignissimos eos possimus odio fuga impedit sapiente commodi perspiciatis ex. Exercitationem voluptates tempore architecto, dolorum ad consequatur, nemo molestiae hic deserunt dolor odit minima molestias sed porro iste nihil a! Commodi placeat illo deserunt, ipsa ipsum minus at quas assumenda libero quos accusantium suscipit corporis aliquid, odio deleniti adipisci aliquam. Eum odio eveniet voluptate nam, assumenda eius nulla optio, nisi quas sequi iure recusandae? Illum, vitae iusto ipsam dolore possimus beatae magnam officia animi voluptates blanditiis est quibusdam fugiat quos repudiandae neque, veritatis autem hic ex vel. Quisquam in dicta quis reiciendis nobis provident earum, vero inventore. Excepturi reiciendis dolorem aliquid, modi, quasi totam, quam animi fugiat repellat nemo officiis in aspernatur neque quae quod? A iste numquam possimus, doloremque libero, magnam excepturi modi commodi aperiam qui ad provident nulla cumque. In nisi nostrum ratione vel, accusantium similique, quia atque aspernatur error cumque odit qui repudiandae porro nobis consectetur! Itaque quae odio nihil possimus odit tempore, amet aperiam nam consequuntur esse, modi ullam, eos deleniti quo hic nulla reprehenderit laborum quaerat. Vitae nobis, tempora facilis eum unde autem ea soluta labore nihil et sit necessitatibus neque non. Delectus, nostrum similique. In dolores nobis cumque laboriosam, possimus porro explicabo officiis incidunt ratione, recusandae fugit deleniti vel quod unde eligendi veniam quo magni exercitationem temporibus nesciunt repellendus quasi. Et voluptatem quas veniam molestiae. Distinctio voluptatibus est molestiae illum dicta omnis ad corrupti dignissimos blanditiis sunt voluptate facilis eum laborum beatae non, labore, delectus nisi reprehenderit quibusdam similique consequatur animi! Laborum sapiente minus aspernatur perspiciatis sed eligendi quaerat delectus magni earum velit, corrupti sunt, aliquid commodi a corporis amet? Recusandae consequuntur iste, sed nobis velit, sint ipsum eligendi repudiandae est laudantium itaque tenetur? Nesciunt officia, unde ex quam a illo, animi fuga ea explicabo cumque, id modi. Esse expedita explicabo quasi modi veritatis harum repudiandae consequatur iusto facere! Provident, odit placeat reiciendis aut voluptas praesentium officiis assumenda accusantium eveniet delectus, nostrum perferendis quaerat. Nemo excepturi maxime voluptas eius similique officia facilis labore vitae ex autem, soluta adipisci ipsam numquam molestias omnis consequuntur explicabo error voluptatem incidunt atque blanditiis quidem, sit, praesentium tenetur! A praesentium totam at officia ea dicta delectus ipsam numquam cupiditate sequi corrupti, odit consectetur repellat suscipit. Velit magnam et, sint ipsa excepturi iusto doloribus aspernatur inventore nobis accusantium dolorum laboriosam beatae porro nostrum repellat at sed dolore debitis.
+            <div class="service-swiper_btn">
+                <div class="btn-custom">
+                    <a href="#">оставить отзыв</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- reviews end -->
+
+    <!-- see also start -->
+    <div class="container">
+        <div class="service-also section">
+            <h3>Смотрите также</h3>
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="service-also_item" style="background-image: url(images/also1.png);">
+                        <a href="#">
+                            <div class="service-also_item__bg">
+                                Установка Windows на Mac
+                            </div>
+                        </a> 
+                    </div>  
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="service-also_item" style="background-image: url(images/also2.png);">
+                        <a href="#">
+                            <div class="service-also_item__bg">
+                                Настройка роутера
+                            </div>
+                        </a> 
+                    </div>  
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="service-also_item" style="background-image: url(images/also3.png);">
+                        <a href="#">
+                            <div class="service-also_item__bg">
+                                Чистка ноутбука
+                            </div>
+                        </a> 
+                    </div>  
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="service-also_item" style="background-image: url(images/also4.png);">
+                        <a href="#">
+                            <div class="service-also_item__bg">
+                                Абонентское обслуживание 
+                            </div>
+                        </a> 
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- see also end -->
+
+    <!-- contacts start  -->
+    <div class="container-fluid position-relative">
+        <div id="contacts"></div>
+        <div class="container ">
+            <div class="service-contact">
+                <div class="row"> 
+                    <div class="col-12 col-lg-6 d-flex align-items-start">
+                        <div class="service-contact_item">
+                            <h3>Наши контакты</h3>
+                            <h5>свяжитесь с нами любым удобным для Вас способом</h5>
+                            <div class="tel">
+                                <svg>
+                                    <use xlink:href='#phone1'></use>
+                                </svg>
+                                <span>8 (812) 603-2681</span>
+                            </div>
+                            <form action="#">
+                                <p>Задайте нам вопрос</p>
+                                <input type="text" placeholder="Ваше имя" required>
+                                <input type="tel" placeholder="Ваш телефон" required>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Ваш коментарий" ></textarea>
+                                <div class="btn-cont">
+                                    <button type="submit">Отправить</button>
+                                    <span>Нажимая на кнопку "Отправить" Вы соглашаетесь на обработку Ваших данных</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 position-static ">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- contacts end  -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="service-footer">
+                        <a class="service-footer_logo" href="#top">
+                            <div class="service-footer_logo__image">
+                                <!-- <svg>
+                                    <use xlink:href="#logo"></use>
+                                </svg> -->
+                            </div>
+                            <div class="service-footer_logo__text">
+                                <div>SERVICE<span>IT</span>.KIEV.UA</div>
+                                <div>компьютерный <br> помощник</div>
+                            </div>
+                        </a> 
+                        <div class="service-footer_menu">
+                            <ul>
+                                <li>
+                                    <a class="nav-item" href="#top">Главная <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-item" href="#about">О нас</a>
+                                </li>
+                                <li>
+                                    <a class="nav-item" href="#our-work">Как мы работаем</a> 
+                                </li>
+                                <li>
+                                    <a class="nav-item" href="#service">Услуги</a> 
+                                </li>
+                                <li>
+                                    <a class="nav-item" href="#reviews">Отзывы</a> 
+                                </li>
+                                <li>
+                                    <a class="nav-item" href="#contacts">Контакты</a> 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="service-footer_tools ">
+                            <div class="service-footer_tools-phone">
+                                <div class="number">
+                                    <svg> 
+                                        <use xlink:href="#phone1"></use>
+                                    </svg>
+                                    + 7 (800) 550-96-96
+                                </div>
+                                <div class="btn-custom">
+                                    <a href="#"> заказать звонок </a>
+                                </div>
+                            </div>
+                            <div class="service-footer_tools-policy">
+                                <a href="#">
+                                    Политика конфидециальности
+                                </a>
+                            </div>
+                        </div>
+                        
+                       
+                        
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    
+
    
     <svg display="none" > 
         <symbol id="phone1"  viewBox="0 0 384 384">
@@ -846,7 +1161,7 @@
                     c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
                     c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"/>
             </g>
-        </symbol>
+        </symbol> 
 
         <symbol id="idea" viewBox="0 0 512.002 512.002">
             <g>
@@ -1098,9 +1413,54 @@
                 </g>
             </g>
         </symbol>
-        <symbol id=" "> 
-
+        <symbol id="close" viewBox="0 0 329.26933 329">
+            <path
+            d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
         </symbol>
+        <!-- <symbol id="logo" viewBox="0 0 512 512">  
+            <g>
+                <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="74.9807" x2="437.0193" y1="74.9807" y2="437.0193">
+                    <stop offset="0" stop-color="#fbf24a" />
+                    <stop offset="1" stop-color="#fbd141" />
+                </linearGradient>
+                <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="209.6406" x2="302.3594" y1="301.0117" y2="301.0117">
+                    <stop offset=".0054" stop-color="#636363" />
+                    <stop offset="1" stop-color="#434343" />
+                </linearGradient>
+                <linearGradient id="c">
+                    <stop offset=".0054" stop-color="#c0c0c0" />
+                    <stop offset="1" stop-color="#828282" />
+                </linearGradient>
+                <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="118" x2="394" xlink:href="#c" y1="260.582" y2="260.582" />
+                <linearGradient id="e" gradientUnits="userSpaceOnUse" x1="118" x2="394" y1="187.2695" y2="187.2695">
+                    <stop offset="0" stop-color="#085aae" />
+                    <stop offset="1" stop-color="#242424" />
+                </linearGradient>
+                <linearGradient id="f" gradientUnits="userSpaceOnUse" x1="169.2109" x2="342.7891" xlink:href="#c" y1="321.2266"
+                    y2="321.2266" />
+                <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="239.8281" x2="394" xlink:href="#c" y1="369.7422"
+                    y2="369.7422" />
+                <linearGradient id="h" gradientUnits="userSpaceOnUse" x1="118" x2="256" y1="369.7422" y2="369.7422">
+                    <stop offset="0" stop-color="#fe6192" />
+                    <stop offset="1" stop-color="#ff3cad" />
+                </linearGradient>
+                <path
+                    d="m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0"
+                    fill="url(#a)" />
+                <path d="m256 280.796875h-46.359375v40.429687h92.71875v-40.429687zm0 0" fill="url(#b)" />
+                <path
+                    d="m256 228.566406v-4.371094l-10 2.34375-11.5625-2.34375 1.402344 4.726563-117.839844 27.617187v40.429688h276v-40.429688zm0 0"
+                    fill="url(#d)" />
+                <path d="m256 118h-138v138.539062h276v-138.539062zm0 0" fill="url(#e)" />
+                <path d="m256 313.140625h-86.789062v16.171875h173.578124v-16.171875zm0 0" fill="url(#f)" />
+                <path
+                    d="m339.480469 345.484375-16.171875 15.890625h-83.480469v16.171875h83.398437l16.171876 16.453125h54.601562v-48.515625zm0 0"
+                    fill="url(#g)" />
+                <path
+                    d="m142.257812 345.484375c-13.375 0-24.257812 10.882813-24.257812 24.257813s10.882812 24.257812 24.257812 24.257812h113.742188v-48.515625zm0 0"
+                    fill="url(#h)" />
+            </g>
+        </symbol> -->
 
     </svg>
 
@@ -1110,12 +1470,76 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
 <script src="node_modules/mobius1-selectr/dist/selectr.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
 <script>
     new Selectr('#yourcity', { 
         searchable: false
     });
 </script>
+<script>
+     var swiper = new Swiper('.swiper-container', {
+      
+      loop: true, 
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination', 
+        clickable: true, 
+      },
+    });
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV6rGizlGVgxJ09UYM9d-T2A2AuC0Xf60&callback=initMap"
+         type="text/javascript"></script>
+<script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: 50.4506909, lng: 30.5229136};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 15, center: uluru});
+   
+
+        var icon = { 
+            path: `M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
+			c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719
+			c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z`,
+            fillColor: '#7737fb',
+            fillOpacity: 1, 
+            anchor: new google.maps.Point(0,0),
+            strokeWeight: 0,
+            scale: .1
+        } 
+        var marker = new google.maps.Marker({
+                position: uluru,
+                icon: icon,
+                map: map
+        });
+
+    }
+</script>
+    
+<script>
+    const anchors = document.querySelectorAll('a[href*="#"]'); 
+
+    for (let anchor of anchors) { 
+        anchor.addEventListener("click", function(event) { 
+            event.preventDefault();  
+            const blockID = anchor.getAttribute('href');
+            document.querySelector('' + blockID).scrollIntoView({
+                behavior: "smooth", 
+                block: "start"
+            })
+        })
+    }
+</script>
+
+<script src="js/modal.js"></script>
+
+
 
 </body>
 </html>

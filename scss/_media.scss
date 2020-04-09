@@ -28,6 +28,23 @@
             } 
         }
     } 
+    .service-footer { 
+        padding-top: 20px;
+        flex-direction: column;   
+        &_menu  {  
+            margin: 20px 0; 
+        }
+        &_tools { 
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            &-policy { 
+                position: relative;  
+                bottom: auto;
+                right: auto;
+            }
+        }
+    }
 } 
 
 @media screen and (max-width: 995px) { 
@@ -127,6 +144,86 @@
                 width: 130px;
                 height: 130px; 
             } 
+        }
+    } 
+    .service-swiper { 
+        margin-top: 100px; 
+        .swiper-wrapper { 
+            padding: 20px 0;
+        }  
+        .swiper-button-next , .swiper-button-prev  { 
+             display: none;
+        } 
+        .swiper-pagination-bullet {  
+            // margin: 0 12px !; 
+        }
+        .swiper-pagination-bullet-active {   
+            margin: 0 10px;  
+        } 
+        .swiper-slide { 
+            padding: 50px 70px;
+        }
+    
+        &_item { 
+            
+            margin: 0;
+            width: 100%;
+            max-width: 782px;
+            min-height: 345px; 
+    
+            margin-top: 60px;
+             
+            
+        }
+    }
+    .service-contact { 
+        #map { 
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: auto;
+            bottom: 0;
+            width: 100vw;
+            height: 350px;
+        } 
+
+        margin-top: 100px; 
+
+        &_item { 
+            margin: 0 auto;
+            min-height: 350px;
+            padding-bottom: 380px; 
+     
+            form {  
+                p {  
+                }
+                input {  
+                }
+                
+                textarea {  
+                }
+                .btn-cont {  
+                    button { 
+                         
+                    }
+                    span {  
+                    }
+                }
+                
+            }
+        }
+    }
+    .service-modal {  
+        &-container { 
+            &_header {
+             display: none;
+             } 
+             &_contact, &_end { 
+                 margin-top: 30px;
+                 width: 100%;
+                 padding-left: 10px;
+                 padding-right: 10px;
+             }
         }
     } 
     
@@ -330,8 +427,41 @@
             }
         }
     } 
+    .service-footer {  
+        &_menu  {   
+            ul { 
+                flex-direction: column;
+                align-items: center;
+                li { 
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &_tools { 
+            
+            &-phone { 
+                 flex-direction: column;
+                 align-items: center;
+                 .btn-custom { 
+                     margin-top: 10px; 
+                     width: 100%;
+                     a { 
+                         width: 100%;
+                         text-align: center;
+                         margin-left: 0;
+                     }
+                 }
+            }
+        }
+    }
  }
  @media screen and (max-width: 500px) { 
+    .section { 
+        h3 {  
+            font-size: 35px !important; 
+        }
+    }
     .service-header { 
         
         &_collapse {     
@@ -510,7 +640,69 @@
             }  
         }
     } 
+    .service-swiper { 
+        margin-top: 100px; 
+        .swiper-wrapper { 
+            padding: 20px 0;
+        }  
+        .swiper-button-next , .swiper-button-prev  { 
+             display: none;
+        } 
+        .swiper-pagination-bullet {  
+            // margin: 0 12px !; 
+        }
+        .swiper-pagination-bullet-active {   
+            margin: 0 10px;  
+        } 
+        .swiper-slide { 
+            padding: 30px 10px; 
+        }
     
+        &_item { 
+            
+            margin: 0;
+            width: 100%;
+            max-width: 782px;
+            min-height: 345px; 
+    
+            margin-top: 60px;
+             
+             box-shadow: 0px 14px 15px 0px rgba(0, 0, 0, 0.16);
+            
+        }
+    }
+    .service-also  { 
+        &_item {  
+            height: 120px; 
+            &__bg {  
+                padding-top: 40px; 
+            }
+        }
+    }
+    .service-contact {  
+        &_item {  
+            form {  
+                p {  
+                }
+                input {  
+                    width: 100%;
+                    &:first-of-type{ 
+                        margin-bottom: 10px;
+                    }
+                }
+               
+                .btn-cont {  
+                    flex-wrap: wrap;
+                    button { 
+                         width: 100%;
+                    }
+                    span {  
+                        margin-top: 10px;
+                    }
+                } 
+            }
+        }
+    }
 }
 @media screen and (max-width: 400px) {
     .service-about { 
@@ -544,4 +736,5 @@
  @media screen and (max-width: 350px) { }
 
 
+ 
  

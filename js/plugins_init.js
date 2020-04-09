@@ -1,6 +1,4 @@
-
-
-;(function(){
+ 
     new Selectr('#yourcity', { 
         searchable: false
     }); 
@@ -17,5 +15,4 @@
         el: '.swiper-pagination', 
         clickable: true, 
       },
-    }); 
-}());
+    });  

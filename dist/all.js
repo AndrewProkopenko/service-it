@@ -99,9 +99,7 @@ modalContact.classList.remove('hide')
 
 }());
 
-
-
-;(function(){
+ 
     new Selectr('#yourcity', { 
         searchable: false
     }); 
@@ -118,5 +116,4 @@ modalContact.classList.remove('hide')
         el: '.swiper-pagination', 
         clickable: true, 
       },
-    }); 
-}());
+    });  

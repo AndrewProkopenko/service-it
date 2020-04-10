@@ -10,17 +10,7 @@
                 block: "start"
             })
         })
-    }
-    // for(let i = 0; i<anchors.length; i++) { 
-    //     anchors[i].addEventListener("click", function(event) { 
-    //         event.preventDefault(); 
-    //         const blockID = anchors[i].getAttribute('href');
-    //         document.querySelector('' + blockID).scrollIntoView({
-    //             behavior: "smooth", 
-    //             block: "start"
-    //         })
-    //     })
-    // }
+    } 
 }());
 
 
@@ -65,23 +55,13 @@ modalCloseCont = document.querySelector('.js-modal .service-modal-container'),
 modalCloseIcon = document.querySelectorAll('.modal-close'),
 closeBtn = document.querySelector('.js-close-bnt'),
 modalContact = document.querySelector('.service-modal-container_contact'),
-modalEnd = document.querySelector('.service-modal-container_end')
-// modalPolicyBtn = document.querySelector('.js-modal-policy'),
-// modalPolicy = document.querySelector('.service-modal-container_policy')
+modalEnd = document.querySelector('.service-modal-container_end') 
 
-
-
-// modalBtn.forEach( (item, index) => { 
-// modalBtn[index].addEventListener('click', openModal)
-// })
+ 
 for (let i = 0 ; i< modalBtn.length; i++) { 
 modalBtn[i].addEventListener('click', openModal)
 }
-
-
-// modalCloseIcon.forEach( (item, index) => { 
-// modalCloseIcon[index].addEventListener('click', closeModal)
-// }) 
+ 
 for (let i = 0 ; i< modalCloseIcon.length; i++) { 
 modalCloseIcon[i].addEventListener('click', closeModal)
 }
@@ -89,9 +69,7 @@ modalCloseIcon[i].addEventListener('click', closeModal)
 modalCont.addEventListener('click', closeModalProps) 
 
 closeBtn.addEventListener('click', closeBtnFunction)
-
-// modalPolicyBtn.addEventListener('click', openModalPolicy)
-
+ 
 
 function openModal(e) { 
 document.body.classList.add('overflow-hidden')
@@ -103,16 +81,14 @@ function closeModal() {
 document.body.classList.remove('overflow-hidden')
 modalCont.classList.remove('show') 
 modalEnd.classList.remove('show')
-modalContact.classList.remove('hide')
-// modalPolicy.classList.remove('show')
+modalContact.classList.remove('hide') 
 }
 function closeModalProps(e) { 
 if( e.target == modalCont ||  e.target == modalCloseCont) {
 document.body.classList.remove('overflow-hidden')
 modalCont.classList.remove('show')
 modalEnd.classList.remove('show')
-modalContact.classList.remove('hide')
-// modalPolicy.classList.remove('show')
+modalContact.classList.remove('hide') 
 }  
 }
 
@@ -127,15 +103,7 @@ closeModal()
 modalEnd.classList.remove('show')
 modalContact.classList.remove('hide')
 }
-
-// function openModalPolicy (e) { 
-// document.body.classList.add('overflow-hidden')
-// e.preventDefault()
-// modalCont.classList.add('show') 
-
-// modalPolicy.classList.add('show')
-// modalContact.classList.add('hide')
-// }
+ 
  
     new Selectr('#yourcity', { 
         searchable: false
@@ -172,12 +140,7 @@ for (let i = 0 ; i< tableRow.length; i++) {
     if( i >= 10) { 
         tableRow[i].classList.add('d-none')
     }
-}
-// tableRow.forEach( (item, i) => { 
-//     if( i >= 10) { 
-//         tableRow[i].classList.add('d-none')
-//     }
-// })
+} 
 
 tableBtn.addEventListener('click', moreRow) 
 
@@ -188,9 +151,7 @@ function moreRow (e) {
          for (let i = 0 ; i< tableRow.length; i++) { 
             tableRow[i].classList.remove('d-none') 
         }
-        // tableRow.forEach( (item, i) => { 
-        //     tableRow[i].classList.remove('d-none') 
-        // })
+      
         tableBtnLink.innerHTML = "скрыть";
         flag = 1; 
     }
@@ -200,11 +161,7 @@ function moreRow (e) {
                 tableRow[i].classList.add('d-none')
             }
         }
-        // tableRow.forEach( (item, i) => { 
-        //     if( i >= 10) { 
-        //         tableRow[i].classList.add('d-none')
-        //     }
-        // })
+      
         tableBtnLink.innerHTML = "показать все";
         flag = 0;
     }

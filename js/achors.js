@@ -10,15 +10,5 @@
                 block: "start"
             })
         })
-    }
-    // for(let i = 0; i<anchors.length; i++) { 
-    //     anchors[i].addEventListener("click", function(event) { 
-    //         event.preventDefault(); 
-    //         const blockID = anchors[i].getAttribute('href');
-    //         document.querySelector('' + blockID).scrollIntoView({
-    //             behavior: "smooth", 
-    //             block: "start"
-    //         })
-    //     })
-    // }
+    } 
 }());

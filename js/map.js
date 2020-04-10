@@ -1,5 +1,7 @@
 
- 
+
+
+
 function initMap() {
     // The location of Uluru
     var uluru = {lat: 50.4506909, lng: 30.5229136};
@@ -22,4 +24,4 @@ function initMap() {
               map: map
       });
 
-  } 
+} 

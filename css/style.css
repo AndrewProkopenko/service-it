@@ -2033,8 +2033,7 @@ header.sticky .service-header_menu a.active {
   }
   .service-about_items {
     height: 60px;
-    margin: 0 auto;
-    margin-top: 8px;
+    margin: 5px;
   }
   .service-about .service-large {
     height: 80px;
@@ -2085,6 +2084,8 @@ header.sticky .service-header_menu a.active {
   }
   .service-five-col {
     width: 100% !important;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .service-five-item_text {
     padding: 15px;

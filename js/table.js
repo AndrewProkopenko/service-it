@@ -8,12 +8,7 @@ for (let i = 0 ; i< tableRow.length; i++) {
     if( i >= 10) { 
         tableRow[i].classList.add('d-none')
     }
-}
-// tableRow.forEach( (item, i) => { 
-//     if( i >= 10) { 
-//         tableRow[i].classList.add('d-none')
-//     }
-// })
+} 
 
 tableBtn.addEventListener('click', moreRow) 
 
@@ -24,9 +19,7 @@ function moreRow (e) {
          for (let i = 0 ; i< tableRow.length; i++) { 
             tableRow[i].classList.remove('d-none') 
         }
-        // tableRow.forEach( (item, i) => { 
-        //     tableRow[i].classList.remove('d-none') 
-        // })
+      
         tableBtnLink.innerHTML = "скрыть";
         flag = 1; 
     }
@@ -36,11 +29,7 @@ function moreRow (e) {
                 tableRow[i].classList.add('d-none')
             }
         }
-        // tableRow.forEach( (item, i) => { 
-        //     if( i >= 10) { 
-        //         tableRow[i].classList.add('d-none')
-        //     }
-        // })
+      
         tableBtnLink.innerHTML = "показать все";
         flag = 0;
     }

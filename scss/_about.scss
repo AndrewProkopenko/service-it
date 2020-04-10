@@ -87,7 +87,7 @@
             padding-bottom: 20px;
 
             svg { 
-                width: 40px;
+                width: 41px;
                 height: 40px;
                 fill: #7737fb;
                 transition: 200ms ease;
@@ -113,6 +113,7 @@
             margin-top: 5px;
             padding: 10px 0;
            a { 
+               transition: 300ms ease;
                line-height: 0;
                 text-decoration: underline;
                 font-weight: 500;

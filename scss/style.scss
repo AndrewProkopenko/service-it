@@ -41,7 +41,8 @@ $font-family-sans-serif:  'Circe';
 .section { 
     h3 { 
         font-weight: 800;
-        font-size: 50px;
+        font-size: 50px; 
+        padding-bottom: 40px;
         span { 
             color: $warning;
         }

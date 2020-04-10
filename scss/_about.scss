@@ -1,6 +1,8 @@
 .service-about { 
     padding-top: 100px;
-
+    h3 { 
+        padding-bottom: 10px !important;
+    }
     &_image {  
             border-radius: 4px; 
             height: 294px; 

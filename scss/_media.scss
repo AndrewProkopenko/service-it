@@ -485,6 +485,8 @@
     .section { 
         h3 {  
             font-size: 25px !important; 
+            padding-right: 15px;
+            padding-left: 15px;
             padding-bottom: 0 !important;
         }
     }
@@ -803,20 +805,27 @@
     .service-also  { 
         margin-top: 40px;
         &_item {  
-            height: 120px; 
+            height: 140px; 
             &__bg {  
-                padding-top: 40px; 
+                padding-top: 70px; 
             }
         }
     }
     .service-contact {  
         margin-top: 0;
         &_item {  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3, h5 { 
+                text-align: center;
+            }
             .tel { 
                 margin: 12px 0;
             }
             form {  
                 p {  
+                    text-align: center;
                 }
                 input {  
                     width: 100%;
@@ -832,13 +841,14 @@
                     }
                     span {  
                         margin-top: 10px;
+                        text-align: center;
                     }
                 } 
             }
         }
     }
     .service-footer { 
-        padding-bottom: 0px;
+        padding-bottom: 15px;
         &_menu { 
             margin-bottom: 0;
         }

@@ -81,8 +81,13 @@
                                 <div>компьютерный <br> помощник</div>
                             </div>
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler js-navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
+                          <i>
+                                <svg class="d-none">
+                                    <use xlink:href="#close"></use>
+                                </svg>
+                          </i>
                         </button>
         
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -1444,14 +1449,6 @@
         </symbol> 
     </svg>
   
-  <script>
-        // Function to make IE9+ support forEach:
-        if (window.NodeList && !NodeList.prototype.forEach) {
-            NodeList.prototype.forEach = Array.prototype.forEach;
-            console.log('ie9+')
-        }
-    </script>
-
    
   
  
@@ -1460,6 +1457,7 @@
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV6rGizlGVgxJ09UYM9d-T2A2AuC0Xf60&callback=initMap"
 type="text/javascript"></script>
+ 
 
 </body>
 </html>

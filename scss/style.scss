@@ -81,3 +81,25 @@ html, body {
 #our-work, #reviews, #contacts { 
     transform: translateY(-92px);
 }
+
+.navbar-toggler { 
+    width: 56px;
+    height: 40px;
+     
+    svg {  
+        width: 20px;
+        height: 20px;
+        opacity: .5;
+        fill: rgb(58, 55, 55);
+    }
+}
+// .navbar-toggler.collapsed { 
+//     svg { 
+//         display: none !important;
+//     }
+// }
+// .navbar-toggler.start { 
+//     span { 
+//         display: inline-block;
+//     }
+// }

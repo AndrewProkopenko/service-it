@@ -75,7 +75,7 @@
         &_menu  { 
             position: static; 
             
-            
+            padding-bottom: 15px;
             width: 100%; 
             height: auto;
             background: none;
@@ -813,10 +813,15 @@
     }
     .service-contact {  
         margin-top: 0;
+        #map { 
+            height: 250px;
+        }
         &_item {  
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-bottom: 280px;
+
             h3, h5 { 
                 text-align: center;
             }

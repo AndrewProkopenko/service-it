@@ -484,7 +484,7 @@
  @media screen and (max-width: 500px) { 
     .section { 
         h3 {  
-            font-size: 30px !important; 
+            font-size: 25px !important; 
         }
     }
     .service-header { 
@@ -665,8 +665,9 @@
             }
             &_btn {  
                 a  { 
-                    height: auto; 
-                    padding: 12px 15px;
+                    height: 100%; 
+                    padding: 15px;
+
                 }
             }
             

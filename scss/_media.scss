@@ -566,11 +566,10 @@
     .service-about { 
          padding-top: 40px;
         &_items {  
-            height: 50px;
-    
-            max-width: 90%;
+            height: 60px;
+     
             margin: 0 auto;
-            margin-top: 10px; 
+            margin-top: 8px; 
         }
         .service-large { 
             height: 80px;
@@ -806,6 +805,16 @@
         padding-bottom: 0px;
         &_menu { 
             margin-bottom: 0;
+        }
+        &_tools { 
+            &-policy { 
+                position: static;
+                a { 
+                    display: inline-block;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }   
+            }
         }
     }
 }

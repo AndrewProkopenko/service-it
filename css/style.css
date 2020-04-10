@@ -2032,10 +2032,9 @@ header.sticky .service-header_menu a.active {
     padding-top: 40px;
   }
   .service-about_items {
-    height: 50px;
-    max-width: 90%;
+    height: 60px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 8px;
   }
   .service-about .service-large {
     height: 80px;
@@ -2254,6 +2253,14 @@ header.sticky .service-header_menu a.active {
   }
   .service-footer_menu {
     margin-bottom: 0;
+  }
+  .service-footer_tools-policy {
+    position: static;
+  }
+  .service-footer_tools-policy a {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 400px) {

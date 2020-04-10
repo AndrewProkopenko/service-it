@@ -75,4 +75,8 @@ html, body {
 // ::-moz-focus-inner { 
 //     outline: none !important;
 //     display: none; 
-// }
+// } 
+
+#our-work, #reviews, #contacts { 
+    transform: translateY(-92px);
+}

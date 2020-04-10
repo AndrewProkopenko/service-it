@@ -479,7 +479,7 @@
                  }
             }
         }
-    }
+    } 
  }
  @media screen and (max-width: 500px) { 
     .section { 
@@ -513,6 +513,7 @@
     .service-banner { 
         &_content { 
             padding-top: 50px;
+            padding-bottom: 35px;
             align-items: center;
             h2 { 
                 text-align: center;
@@ -527,7 +528,7 @@
     
                 font-size: 20px;   
             }
-           &-button  { 
+           &-button  {  
                p { 
                    line-height: 18px;
                }
@@ -538,8 +539,9 @@
                    }
                }
                span { 
-                   display: inline-block;
-                   margin-top: 20px;
+                   margin: 0 auto;
+                   display: block;
+                   margin-top: 10px;
                    text-align: center;
                }
            }
@@ -561,8 +563,25 @@
             }
         }
     }
+    .service-about { 
+         padding-top: 40px;
+        &_items {  
+            height: 50px;
+    
+            max-width: 90%;
+            margin: 0 auto;
+            margin-top: 10px; 
+        }
+        .service-large { 
+            height: 80px;
+        }
+        &_trigger-section { 
+            margin-top: 50px;
+        }
+    }
+    
     .service-four { 
-        padding-top: 40px;
+        padding-top: 20px;
         h3 { 
            font-size: 35px !important;
         }
@@ -588,13 +607,17 @@
             &-text {
                 font-size: 12px;
                 line-height: 12px; 
-            }
-           
+            } 
+        }
+        &_btn { 
+            margin-top: 15px;
         }
         
     }
     .service-five { 
    
+        padding-top: 40px;
+
         h3 {  
             font-size: 35px !important;
         }   
@@ -625,7 +648,22 @@
             
         }
     }
-    .service-order {   
+    .service-table { 
+        margin-top: 0;
+        table { 
+            margin-bottom: 30px;
+        }
+        &_footer-pay { 
+            top: -25px;
+        }
+        .btn-custom { 
+            a { 
+                margin-left: 0;
+            }
+        }
+    }
+    .service-order {
+        margin-top: 30px;   
         &_item { 
             padding: 30px 0;
             margin-left: 0;
@@ -664,15 +702,19 @@
         }
     }
     .service-accordion {  
+        margin-top: 30px;
         h3 { 
             font-size: 35px !important;
         }
     }
     .service-masters { 
-      
+        margin-top: 50px;
+        h3 { 
+            margin-bottom: 0;
+        }
         &_item {   
             
-            margin-top: 80px;
+            margin-top: 70px;
             &__image {
                 transform: translateY(-50px);
                 margin-bottom: -50px;
@@ -682,9 +724,14 @@
         }
     } 
     .service-swiper { 
-        margin-top: 100px; 
+        margin-top: 50px; 
+        h3 { 
+            margin-bottom: -20px;
+        }
         .swiper-wrapper { 
             padding: 20px 0;
+            display: flex;
+            align-items: center;
         }  
         .swiper-button-next , .swiper-button-prev  { 
              display: none;
@@ -698,7 +745,9 @@
         .swiper-slide { 
             padding: 30px 10px; 
         }
-    
+        &_btn { 
+            margin-top: 20px;
+        }
         &_item { 
             
             margin: 0;
@@ -708,11 +757,16 @@
     
             margin-top: 60px;
              
-             box-shadow: 0px 14px 15px 0px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 14px 15px 0px rgba(0, 0, 0, 0.16);
             
+            &__name { 
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
         }
     }
     .service-also  { 
+        margin-top: 40px;
         &_item {  
             height: 120px; 
             &__bg {  
@@ -721,7 +775,11 @@
         }
     }
     .service-contact {  
+        margin-top: 0;
         &_item {  
+            .tel { 
+                margin: 12px 0;
+            }
             form {  
                 p {  
                 }
@@ -742,6 +800,12 @@
                     }
                 } 
             }
+        }
+    }
+    .service-footer { 
+        padding-bottom: 0px;
+        &_menu { 
+            margin-bottom: 0;
         }
     }
 }

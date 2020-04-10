@@ -59,7 +59,7 @@
             background-image: -ms-linear-gradient( -41deg, rgb(119,55,251) 0%, rgb(99,28,253) 40%, rgb(78,0,255) 100%);
             svg { 
                 fill: #fff;  
-                animation: tg-svg-an 500ms ease-in forwards ;
+                // animation: tg-svg-an 500ms ease forwards ;
             }
             .more a { 
                 display: inline-block;
@@ -90,6 +90,7 @@
                 width: 40px;
                 height: 40px;
                 fill: #7737fb;
+                transition: 200ms ease;
             }
             h5 {  
                 padding-left: 10px;
@@ -134,7 +135,7 @@
     }
 }
 @keyframes tg-svg-an { 
-    30% {  
+    0% {  
         fill: #fff; 
     }
     100% {  

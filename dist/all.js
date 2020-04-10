@@ -1,30 +1,26 @@
 ;(function(){
     const anchors = document.querySelectorAll('a[href*="#"]'); 
- 
-    // for (let anchor of anchors) { 
-    //     anchor.addEventListener("click", function(event) { 
-    //         event.preventDefault(); 
-    //         console.log('fuck')
-    //         const blockID = anchor.getAttribute('href');
-    //         document.querySelector('' + blockID).scrollIntoView({
-    //             behavior: "smooth", 
-    //             block: "start"
-    //         })
-    //     })
-    // }
-    
 
-    for(let i = 0; i<anchors.length; i++) { 
-        anchors[i].addEventListener("click", function(event) { 
+    for (let anchor of anchors) { 
+        anchor.addEventListener("click", function(event) { 
             event.preventDefault(); 
-            console.log(anchors)
-            const blockID = anchors[i].getAttribute('href');
+            const blockID = anchor.getAttribute('href');
             document.querySelector('' + blockID).scrollIntoView({
                 behavior: "smooth", 
                 block: "start"
             })
         })
     }
+    // for(let i = 0; i<anchors.length; i++) { 
+    //     anchors[i].addEventListener("click", function(event) { 
+    //         event.preventDefault(); 
+    //         const blockID = anchors[i].getAttribute('href');
+    //         document.querySelector('' + blockID).scrollIntoView({
+    //             behavior: "smooth", 
+    //             block: "start"
+    //         })
+    //     })
+    // }
 }());
 
 
@@ -69,9 +65,9 @@ modalCloseCont = document.querySelector('.js-modal .service-modal-container'),
 modalCloseIcon = document.querySelectorAll('.modal-close'),
 closeBtn = document.querySelector('.js-close-bnt'),
 modalContact = document.querySelector('.service-modal-container_contact'),
-modalEnd = document.querySelector('.service-modal-container_end'),
-modalPolicyBtn = document.querySelector('.js-modal-policy'),
-modalPolicy = document.querySelector('.service-modal-container_policy')
+modalEnd = document.querySelector('.service-modal-container_end')
+// modalPolicyBtn = document.querySelector('.js-modal-policy'),
+// modalPolicy = document.querySelector('.service-modal-container_policy')
 
 
 
@@ -94,7 +90,7 @@ modalCont.addEventListener('click', closeModalProps)
 
 closeBtn.addEventListener('click', closeBtnFunction)
 
-modalPolicyBtn.addEventListener('click', openModalPolicy)
+// modalPolicyBtn.addEventListener('click', openModalPolicy)
 
 
 function openModal(e) { 
@@ -108,7 +104,7 @@ document.body.classList.remove('overflow-hidden')
 modalCont.classList.remove('show') 
 modalEnd.classList.remove('show')
 modalContact.classList.remove('hide')
-modalPolicy.classList.remove('show')
+// modalPolicy.classList.remove('show')
 }
 function closeModalProps(e) { 
 if( e.target == modalCont ||  e.target == modalCloseCont) {
@@ -116,7 +112,7 @@ document.body.classList.remove('overflow-hidden')
 modalCont.classList.remove('show')
 modalEnd.classList.remove('show')
 modalContact.classList.remove('hide')
-modalPolicy.classList.remove('show')
+// modalPolicy.classList.remove('show')
 }  
 }
 
@@ -132,14 +128,14 @@ modalEnd.classList.remove('show')
 modalContact.classList.remove('hide')
 }
 
-function openModalPolicy (e) { 
-document.body.classList.add('overflow-hidden')
-e.preventDefault()
-modalCont.classList.add('show') 
+// function openModalPolicy (e) { 
+// document.body.classList.add('overflow-hidden')
+// e.preventDefault()
+// modalCont.classList.add('show') 
 
-modalPolicy.classList.add('show')
-modalContact.classList.add('hide')
-}
+// modalPolicy.classList.add('show')
+// modalContact.classList.add('hide')
+// }
  
     new Selectr('#yourcity', { 
         searchable: false
@@ -158,6 +154,14 @@ modalContact.classList.add('hide')
         clickable: true, 
       },
     });  
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
 let tableRow = document.querySelectorAll('.service-table tbody tr'), 
     tableBtn = document.querySelector('.js-table-btn'),
     tableBtnLink = document.querySelector('.js-table-btn a'),
@@ -179,7 +183,7 @@ tableBtn.addEventListener('click', moreRow)
 
 function moreRow (e) { 
     e.preventDefault()
-    console.log('ie')
+    // console.log('ie')
     if(flag == 0) {  
          for (let i = 0 ; i< tableRow.length; i++) { 
             tableRow[i].classList.remove('d-none') 

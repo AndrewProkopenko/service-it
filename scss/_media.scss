@@ -303,10 +303,10 @@
     
             font-size: 12px;
             line-height: 14px; 
-            svg { 
-                width: 15px;
-                height: 15px; 
-            }
+            // svg { 
+            //     width: 15px;
+            //     height: 15px; 
+            // }
         }
         &_trigger { 
             height: auto;
@@ -576,38 +576,19 @@
                  text-align: center;
              }
          }
-        &_items {  
-            height: 80px;
-     
-            margin: 5px;
-        }
-        .service-large { 
-            height: 80px;
-        }
+        
+       
         &_trigger-section { 
             margin-top: 30px;
         }
         &_trigger { 
-            &:hover { 
-                .more { 
-                    a { 
-                        color: #fff ; 
-                    }
-                }
-            }
-            .more { 
-                a { 
-                    color: #4607c5 ;
-                    display: inline-block;
-                    width: 100%;
-                    text-align: center;
-                    line-height: 16px;
-                }
-            }
+            
         }
         &_trigger { 
+            padding-top: 20px;
             &__head { 
                 flex-direction: column;
+                padding-bottom: 10px;
                 h5 { 
                     padding-left: 0;
                     padding-top: 5px;
@@ -811,16 +792,17 @@
             }
         }
     }
-    .service-also  { 
-        margin-top: 40px;
-        &_item {  
-            height: 140px; 
-            &__bg {  
-                padding-top: 70px; 
-            }
-        }
-    }
+    // .service-also  { 
+    //     margin-top: 40px;
+    //     &_item {  
+    //         height: 140px; 
+    //         &__bg {  
+    //             padding-top: 70px; 
+    //         }
+    //     }
+    // }
     .service-contact {  
+       
         margin-top: 0;
         #map { 
             height: 250px;
@@ -833,6 +815,12 @@
 
             h3, h5 { 
                 text-align: center;
+            }
+            h3 { 
+                padding-top: 30px;
+            }
+            h5 { 
+                margin-bottom: 0;
             }
             .tel { 
                 margin: 20px 0;
@@ -928,6 +916,30 @@
      }
  }
 
+ @media screen and (max-width: 992px) { 
+    .service-about-row_items { 
+        padding-left: 10px;
+        padding-right: 10px;
+        *[class *= 'col'] { 
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        .service-about_items {
+            
+                // height: 80px;
+         
+                margin: 5px;
+          
+         }
+    }
+ }
+ @media screen and (max-width: 768px) { 
+    .service-about_trigger-section {  
+        *[class*='col'] {
+             padding-bottom: 0;
+        }
+    }
+ }
 
- 
+
  

@@ -11,6 +11,7 @@
         min-height: 490px;
     }
     &-item { 
+        height: 100%;
 
         &:hover { 
             padding-bottom: 30px;
@@ -39,8 +40,9 @@
         &_text { 
             padding: 20px 20px 30px 20px;
             &__head { 
-                height: 60px;
-                overflow: hidden;
+                // height: 60px;
+                // overflow: hidden;
+                padding-bottom: 10px;
 
                 font-size: 16px;
                 line-height: 16px;

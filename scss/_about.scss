@@ -87,8 +87,9 @@
 
             padding-bottom: 20px;
 
-            svg { 
-                width: 41px;
+            svg {  
+                min-width: 41px;
+                max-width: 41px;
                 height: 40px;
                 fill: #7737fb;
                 transition: 200ms ease;

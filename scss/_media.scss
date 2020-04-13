@@ -356,25 +356,29 @@
         
         tr { 
             display: flex; 
-            
+            font-size: 0.8em !important;
             // width: 100%;
             th { 
                 &:first-child { 
                     flex-grow: 1;
-                    padding-left: 20px;
+                    padding-left: 10px;
                 }
                 &:last-child {  
-                    min-width: 120px;
+                    width: 100px;
+                    min-width: auto;
                     padding-right: 10px;
                 }
             }
             td { 
+                padding-top: 10px;
+                padding-bottom: 10px;
                 &:first-child { 
                     flex-grow: 1;
-                    padding-left: 20px;
+                    padding-left: 10px;
                 }
                 &:last-child {  
-                    min-width: 120px;
+                    width: 100px;
+                    min-width: auto;
                     padding-right: 10px;
                 }
             }
